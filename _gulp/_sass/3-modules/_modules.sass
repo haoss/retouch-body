@@ -1,0 +1,1202 @@
+/* modules */
+
+.stub
+  height: 100%
+  width: 100%
+  position: relative
+  overflow: hidden
+  color: $color-white
+  background:
+    color: #822ece
+    image: url('../img/stub/bg.jpg')
+    position: center center
+    repeat: no-repeat
+    size: cover
+  &__phone
+    position: absolute
+    z-index: 5
+    right: 125px
+    bottom: 0
+  &__content
+    height: 100%
+    display: flex
+    align-items: center
+  &__footer
+    position: absolute
+    z-index: 10
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(#21155d,.25)
+    height: 80px
+    align-items: center
+    display: flex
+    font-size: 16px
+    a
+      color: $color-white
+      text-decoration: underline
+      &:hover, &:focus
+        text-decoration: none
+    ul
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: space-between
+      li
+        margin: 0
+        list-style: none
+  &__logo
+    padding-left: 144px
+    position: relative
+    height: 103px
+    margin-bottom: 32px
+    z-index: 15
+    &::before
+      content: 'Retouch Body'
+      font-size: 203px
+      font-family: $font-roboto-bold
+      line-height: 0.8
+      position: absolute
+      left: -12px
+      bottom: 0
+      color: rgba($color-white,.05)
+      white-space: nowrap
+    strong
+      display: block
+      line-height: 0.8
+      font-size: 67px
+      margin-bottom: 16px
+    span
+      display: block
+      line-height: 0.8
+      font-size: 42px
+    svg
+      position: absolute
+      width: 98px
+      height: 103px
+      left: 0
+      top: 0
+      g
+        fill: $color-white
+  p
+    line-height: 23px
+    margin-bottom: 30px
+  &__app
+    display: flex
+    position: relative
+    z-index: 20
+    a
+      display: flex
+      width: 200px
+      height: 65px
+      border-radius: 50px
+      background: $color-black
+      justify-content: center
+      align-items: center
+      color: $color-white
+      text-decoration: none
+      box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+      transition: box-shadow 0.35s
+      &:hover, &:focus
+        box-shadow: 0 0px 36px rgba(#bed5ff,.5)
+      &[disabled]
+        opacity: 0.5
+        cursor: default
+        &:hover, &:focus
+          box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+    &>div
+      &+div
+        padding-left: 55px
+
+.section
+  &__title
+    color: $color-white
+    position: relative
+    font-size: 48px
+    font-family: $font-roboto-bold
+    line-height: 1.1
+    margin-bottom: 20px
+    &--1
+      &::before
+        content: attr(data-shadow)
+        font-size: 203px
+        font-family: $font-roboto-bold
+        line-height: 0.8
+        position: absolute
+        left: -12px
+        bottom: 6px
+        color: rgba($color-white,.05)
+        white-space: nowrap
+    &--4
+      color: $primary-color
+    &--5, &--13
+      color: $primary-color
+    &--6
+      color: $primary-color
+    &--7, &--8
+      text-align: center
+      color: $primary-color
+      margin-bottom: 55px
+    &--dark
+      color: $primary-color
+    &--11
+      font-size: 34px
+      .fa
+        display: none
+  &1
+    background:
+      position: top center
+      repeat: no-repeat
+      image: url('../img/bg/bg-section-1.png')
+    &__img
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translateY(-37%) translateX(65px)
+      &--320
+        display: none
+    &__content
+      position: absolute
+      left: 0
+      transform: translateY(-50%) translateX(-195px)
+      p
+        max-width: 570px
+        margin-bottom: 25px
+    &__app
+      display: flex
+      position: relative
+      z-index: 20
+      a
+        display: flex
+        width: 200px
+        height: 65px
+        border-radius: 50px
+        background: $color-black
+        justify-content: center
+        align-items: center
+        color: $color-white
+        text-decoration: none
+        box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+        transition: box-shadow 0.35s
+        &:hover, &:focus
+          box-shadow: 0 0px 36px rgba(#bed5ff,.5)
+        &[disabled]
+          opacity: 0.5
+          cursor: default
+          &:hover, &:focus
+            box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+      &>div
+        &+div
+          padding-left: 55px
+    &__link
+      width: 32px
+      height: 50px
+      position: absolute
+      z-index: 100
+      left: 50%
+      bottom: 40px
+      transform: translateX(-50%)
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 50.399 79.129"><path fill="%23fff" d="M23.4.02C10.345.95 0 11.841 0 25.129v28.799c0 13.895 11.305 25.201 25.2 25.201 13.894 0 25.199-11.307 25.199-25.201V25.129C50.399 11.841 40.055.95 27.001.02c-.555-.045-3.601 0-3.601 0zm23.4 53.908c0 11.91-9.689 21.6-21.599 21.6S3.6 65.839 3.6 53.928V25.129c0-11.91 9.69-21.601 21.6-21.601s21.599 9.69 21.599 21.601l.001 28.799zm-21.6-42.45c-4.22 0-7.65 3.432-7.65 7.65v11.15c0 4.22 3.431 7.65 7.65 7.65 4.218 0 7.65-3.43 7.65-7.65V19.129c0-4.219-3.431-7.651-7.65-7.651zm4.051 18.8a4.055 4.055 0 0 1-4.05 4.05 4.056 4.056 0 0 1-4.051-4.05V19.129a4.056 4.056 0 0 1 4.051-4.05 4.054 4.054 0 0 1 4.05 4.05v11.149z"/><path fill="%23fff" d="M26.554 61.48l-4.419-7.129a1.801 1.801 0 0 0-3.041 1.927l4.419 7.129s1.184 1.618 2.591.726c1.407-.892.45-2.653.45-2.653z"/><path fill="%23fff" d="M24.295 64.133c1.407.892 2.591-.726 2.591-.726l4.419-7.129a1.8 1.8 0 0 0-3.041-1.927l-4.419 7.129s-.957 1.761.45 2.653z"/></svg>') center center no-repeat
+      background-size: 32px 50px
+  &2, &3, &10
+    background:
+      position: top center
+      size: cover
+      repeat: no-repeat
+      image: url('../img/bg/bg-section-2.jpg')
+    &__wrapper
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: flex
+      &>div
+        position: relative
+        width: 33.3%
+        flex-grow: 1
+        transition: background 0.35s
+        background:
+          color: rgba(#190e27,.65)
+          position: center center
+          repeat: no-repeat
+          size: cover
+          image: none
+        overflow: hidden
+        &:nth-child(2)
+          background-color: rgba(#190e27,.55)
+        &:hover
+          background-color: rgba(#190e27,.0)
+        &.div1
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity="0"><path class="st1" d="M239.7 496.5c-2.5 6.4-4.7 12.9-6.4 19.4.2 0 .4.1.6.1 2.4.8 58.8 19 82.4 58.5 1.7 2.8 3 5.8 4.1 8.9 1.1-3.1 2.4-6.1 4.1-8.9 23.6-39.5 80.1-57.7 82.4-58.5.2-.1.4-.1.6-.1-1.7-6.6-3.9-13.1-6.4-19.6-30.7 15.3-58.8 20.4-82.8 20.4-42.6.1-71.9-16.1-78.6-20.2z"/><path class="st1" d="M.5-.3v974.9h639.9V-.3H.5zm320 465.8c3.1 0 5.6 2.5 5.6 5.6 0 3.1-2.5 5.6-5.6 5.6-3.1 0-5.6-2.5-5.6-5.6 0-3.1 2.5-5.6 5.6-5.6zm-114.1 20.9c-1.1 0-2.2-.3-3.2-.9-2.9-1.8-3.9-5.6-2.1-8.6 31-50.7 19.2-82.9 19.1-83.3-1.2-3.2.4-6.8 3.6-8.1 3.2-1.2 6.8.4 8.1 3.6.6 1.5 14.1 38.3-20.1 94.2-1.2 2.1-3.3 3.1-5.4 3.1zM416.9 544c.1 51.4-20.8 78-21.7 79.1-.6.8-1.5 1.2-2.4 1.2-.7 0-1.4-.2-2-.7-1.3-1.1-1.6-3-.5-4.4.2-.3 20.4-26.2 20.3-75.4.4-7.6-.3-14.8-1.7-21.9h-.1c-.6.2-56.6 18.3-79 55.8-3.9 6.6-6 14.4-5.9 22.6.1 20.4-.1 27.7-.1 28 0 1.7-1.4 3-3.1 3h-.6c-1.7 0-3.1-1.3-3.1-3 0-.3-.2-7.6-.1-28 0-8.2-2-16-5.9-22.6-22.4-37.5-78.4-55.6-79-55.8h-.1c-1.4 7.1-2 14.3-1.7 21.8-.1 49.5 20.1 75.3 20.3 75.5 1.1 1.3.9 3.3-.5 4.4-.6.5-1.3.7-2 .7-.9 0-1.8-.4-2.4-1.2-.9-1.1-21.8-27.7-21.7-79.3-1.3-25 8.2-46.6 18.2-69.4 15.8-35.9 32.1-73.1 4.2-127-.8-1.5-.2-3.4 1.3-4.2 1.5-.8 3.4-.2 4.2 1.3 29.3 56.6 12.4 95.1-4 132.4-2 4.6-4 9.2-5.9 13.7 4.9 3.1 70.2 43.3 156.8-.1-1.9-4.5-3.9-9-5.9-13.6-16.4-37.3-33.3-75.8-4-132.4.8-1.5 2.7-2.1 4.2-1.3s2.1 2.7 1.3 4.2c-27.9 53.9-11.6 91.1 4.2 127 10.3 22.9 19.7 44.5 18.4 69.6zm20.9-58.5c-1 .6-2.1.9-3.2.9-2.1 0-4.2-1.1-5.3-3-34.2-55.9-20.7-92.7-20.1-94.2 1.2-3.2 4.8-4.8 8.1-3.6 3.2 1.2 4.8 4.8 3.6 8-.2.5-11.5 33.2 19.1 83.3 1.7 3 .8 6.8-2.2 8.6z"/></g></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity=".85"><path class="st1" d="M239.7 496.5c-2.5 6.4-4.7 12.9-6.4 19.4.2 0 .4.1.6.1 2.4.8 58.8 19 82.4 58.5 1.7 2.8 3 5.8 4.1 8.9 1.1-3.1 2.4-6.1 4.1-8.9 23.6-39.5 80.1-57.7 82.4-58.5.2-.1.4-.1.6-.1-1.7-6.6-3.9-13.1-6.4-19.6-30.7 15.3-58.8 20.4-82.8 20.4-42.6.1-71.9-16.1-78.6-20.2z"/><path class="st1" d="M.5-.3v974.9h639.9V-.3H.5zm320 465.8c3.1 0 5.6 2.5 5.6 5.6 0 3.1-2.5 5.6-5.6 5.6-3.1 0-5.6-2.5-5.6-5.6 0-3.1 2.5-5.6 5.6-5.6zm-114.1 20.9c-1.1 0-2.2-.3-3.2-.9-2.9-1.8-3.9-5.6-2.1-8.6 31-50.7 19.2-82.9 19.1-83.3-1.2-3.2.4-6.8 3.6-8.1 3.2-1.2 6.8.4 8.1 3.6.6 1.5 14.1 38.3-20.1 94.2-1.2 2.1-3.3 3.1-5.4 3.1zM416.9 544c.1 51.4-20.8 78-21.7 79.1-.6.8-1.5 1.2-2.4 1.2-.7 0-1.4-.2-2-.7-1.3-1.1-1.6-3-.5-4.4.2-.3 20.4-26.2 20.3-75.4.4-7.6-.3-14.8-1.7-21.9h-.1c-.6.2-56.6 18.3-79 55.8-3.9 6.6-6 14.4-5.9 22.6.1 20.4-.1 27.7-.1 28 0 1.7-1.4 3-3.1 3h-.6c-1.7 0-3.1-1.3-3.1-3 0-.3-.2-7.6-.1-28 0-8.2-2-16-5.9-22.6-22.4-37.5-78.4-55.6-79-55.8h-.1c-1.4 7.1-2 14.3-1.7 21.8-.1 49.5 20.1 75.3 20.3 75.5 1.1 1.3.9 3.3-.5 4.4-.6.5-1.3.7-2 .7-.9 0-1.8-.4-2.4-1.2-.9-1.1-21.8-27.7-21.7-79.3-1.3-25 8.2-46.6 18.2-69.4 15.8-35.9 32.1-73.1 4.2-127-.8-1.5-.2-3.4 1.3-4.2 1.5-.8 3.4-.2 4.2 1.3 29.3 56.6 12.4 95.1-4 132.4-2 4.6-4 9.2-5.9 13.7 4.9 3.1 70.2 43.3 156.8-.1-1.9-4.5-3.9-9-5.9-13.6-16.4-37.3-33.3-75.8-4-132.4.8-1.5 2.7-2.1 4.2-1.3s2.1 2.7 1.3 4.2c-27.9 53.9-11.6 91.1 4.2 127 10.3 22.9 19.7 44.5 18.4 69.6zm20.9-58.5c-1 .6-2.1.9-3.2.9-2.1 0-4.2-1.1-5.3-3-34.2-55.9-20.7-92.7-20.1-94.2 1.2-3.2 4.8-4.8 8.1-3.6 3.2 1.2 4.8 4.8 3.6 8-.2.5-11.5 33.2 19.1 83.3 1.7 3 .8 6.8-2.2 8.6z"/></g></svg>')
+        &.div2
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity="0"><path class="st1" d="M0-.3v974.9h639.9V-.3H0zM320 456c2.8 0 5.1 2.3 5.1 5.1s-2.3 5.1-5.1 5.1-5.1-2.3-5.1-5.1c-.1-2.8 2.2-5.1 5.1-5.1zm-45.6 7.5c2.3-2.2 5.9-2.2 8.1.1 14.3 14.6 46.1 26.6 75-.2 2.3-2.2 6-2 8.1.3 2.2 2.3 2 6-.3 8.1-15 13.9-30.7 19.1-45.1 19.1-19.1 0-36-9.1-45.9-19.3-2.2-2.2-2.1-5.8.1-8.1zm134.5 76.6c.1 47.4-19.2 72-20 73-.6.7-1.4 1.1-2.2 1.1-.6 0-1.3-.2-1.8-.6-1.2-1-1.4-2.8-.4-4 .2-.2 18.8-24.1 18.8-69.5.4-7-.3-13.7-1.5-20.2h-.1c-.5.2-52.2 16.9-72.9 51.5-3.6 6.1-5.5 13.3-5.5 20.8.1 18.8-.1 25.6-.1 25.8 0 1.6-1.3 2.8-2.9 2.8h-.5-.1c-1.6 0-2.8-1.2-2.9-2.8 0-.3-.2-7-.1-25.8 0-7.6-1.9-14.8-5.5-20.8-20.7-34.5-72.4-51.3-72.9-51.5h-.1c-1.3 6.5-1.9 13.2-1.5 20.1-.1 45.5 18.6 69.4 18.8 69.7 1 1.2.8 3.1-.5 4-.5.4-1.2.6-1.8.6-.8 0-1.7-.4-2.2-1.1-.8-1-20.1-25.6-20-73.1-1.2-23.1 7.6-43 16.8-64.1 14.6-33.2 29.6-67.5 3.9-117.2-.7-1.4-.2-3.1 1.2-3.9 1.4-.7 3.1-.2 3.9 1.2 27 52.2 11.4 87.8-3.7 122.2-1.9 4.3-3.7 8.5-5.5 12.6 4.5 2.9 64.8 39.9 144.7-.1-1.7-4.2-3.6-8.3-5.4-12.6-15.1-34.4-30.7-70-3.7-122.2.7-1.4 2.5-2 3.9-1.2 1.4.7 2 2.5 1.2 3.9-25.8 49.8-10.7 84 3.9 117.2 9.2 21.1 17.9 41 16.7 64.2z"/><path class="st1" d="M245.4 496.3c-2.3 5.9-4.4 11.9-5.9 17.9.2 0 .4.1.6.1 2.2.7 54.3 17.6 76.1 54 1.5 2.6 2.8 5.3 3.8 8.2 1-2.9 2.3-5.6 3.8-8.2 21.8-36.4 73.9-53.3 76.1-54 .2-.1.4-.1.6-.1-1.5-6.1-3.6-12.1-5.9-18-28.5 14.1-54.4 18.8-76.6 18.8-39.4 0-66.5-15-72.6-18.7z"/></g></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity=".85"><path class="st1" d="M0-.3v974.9h639.9V-.3H0zM320 456c2.8 0 5.1 2.3 5.1 5.1s-2.3 5.1-5.1 5.1-5.1-2.3-5.1-5.1c-.1-2.8 2.2-5.1 5.1-5.1zm-45.6 7.5c2.3-2.2 5.9-2.2 8.1.1 14.3 14.6 46.1 26.6 75-.2 2.3-2.2 6-2 8.1.3 2.2 2.3 2 6-.3 8.1-15 13.9-30.7 19.1-45.1 19.1-19.1 0-36-9.1-45.9-19.3-2.2-2.2-2.1-5.8.1-8.1zm134.5 76.6c.1 47.4-19.2 72-20 73-.6.7-1.4 1.1-2.2 1.1-.6 0-1.3-.2-1.8-.6-1.2-1-1.4-2.8-.4-4 .2-.2 18.8-24.1 18.8-69.5.4-7-.3-13.7-1.5-20.2h-.1c-.5.2-52.2 16.9-72.9 51.5-3.6 6.1-5.5 13.3-5.5 20.8.1 18.8-.1 25.6-.1 25.8 0 1.6-1.3 2.8-2.9 2.8h-.5-.1c-1.6 0-2.8-1.2-2.9-2.8 0-.3-.2-7-.1-25.8 0-7.6-1.9-14.8-5.5-20.8-20.7-34.5-72.4-51.3-72.9-51.5h-.1c-1.3 6.5-1.9 13.2-1.5 20.1-.1 45.5 18.6 69.4 18.8 69.7 1 1.2.8 3.1-.5 4-.5.4-1.2.6-1.8.6-.8 0-1.7-.4-2.2-1.1-.8-1-20.1-25.6-20-73.1-1.2-23.1 7.6-43 16.8-64.1 14.6-33.2 29.6-67.5 3.9-117.2-.7-1.4-.2-3.1 1.2-3.9 1.4-.7 3.1-.2 3.9 1.2 27 52.2 11.4 87.8-3.7 122.2-1.9 4.3-3.7 8.5-5.5 12.6 4.5 2.9 64.8 39.9 144.7-.1-1.7-4.2-3.6-8.3-5.4-12.6-15.1-34.4-30.7-70-3.7-122.2.7-1.4 2.5-2 3.9-1.2 1.4.7 2 2.5 1.2 3.9-25.8 49.8-10.7 84 3.9 117.2 9.2 21.1 17.9 41 16.7 64.2z"/><path class="st1" d="M245.4 496.3c-2.3 5.9-4.4 11.9-5.9 17.9.2 0 .4.1.6.1 2.2.7 54.3 17.6 76.1 54 1.5 2.6 2.8 5.3 3.8 8.2 1-2.9 2.3-5.6 3.8-8.2 21.8-36.4 73.9-53.3 76.1-54 .2-.1.4-.1.6-.1-1.5-6.1-3.6-12.1-5.9-18-28.5 14.1-54.4 18.8-76.6 18.8-39.4 0-66.5-15-72.6-18.7z"/></g></svg>')
+        &.div3
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity="0"><path class="st1" d="M245.4 496.3c-2.3 5.9-4.4 11.9-5.9 17.9.2 0 .4.1.6.1 2.2.7 54.3 17.6 76.1 54 1.5 2.6 2.8 5.3 3.8 8.2 1-2.9 2.3-5.6 3.8-8.2 21.8-36.4 73.9-53.3 76.1-54 .2-.1.4-.1.6-.1-1.5-6.1-3.6-12.1-5.9-18-28.4 14.1-54.4 18.8-76.6 18.8-39.4 0-66.5-15-72.6-18.7z"/><path class="st1" d="M0-.3v974.9h639.9V-.3H0zm320 468c2.8 0 5.1 2.3 5.1 5.1s-2.3 5.1-5.1 5.1-5.1-2.3-5.1-5.1c-.1-2.8 2.2-5.1 5.1-5.1zM221.8 494c-20.4 53.6-4.5 83-4.4 83.3 1.6 2.8.6 6.3-2.2 7.8-.9.5-1.9.7-2.8.7-2 0-4-1.1-5-2.9-.8-1.4-18.7-34.5 3.7-93.1 1.1-3 4.5-4.5 7.4-3.3 3 1.2 4.5 4.6 3.3 7.5zm187.1 46.1c.1 47.4-19.2 72-20 73-.6.7-1.4 1.1-2.2 1.1-.6 0-1.3-.2-1.8-.6-1.2-1-1.4-2.8-.4-4 .2-.2 18.8-24.1 18.8-69.5.4-7-.3-13.7-1.5-20.2h-.1c-.5.2-52.2 16.9-72.9 51.5-3.6 6.1-5.5 13.3-5.5 20.8.1 18.8-.1 25.6-.1 25.8 0 1.6-1.3 2.8-2.9 2.8h-.5-.1c-1.6 0-2.8-1.2-2.9-2.8 0-.3-.2-7-.1-25.8 0-7.6-1.9-14.8-5.5-20.8-20.7-34.6-72.4-51.3-72.9-51.5h-.1c-1.3 6.5-1.9 13.2-1.5 20.1-.1 45.7 18.6 69.4 18.8 69.7 1 1.2.8 3.1-.4 4-.5.4-1.2.6-1.8.6-.8 0-1.7-.4-2.2-1.1-.8-1-20.1-25.6-20-73.1-1.2-23.1 7.6-43 16.8-64.1 14.6-33.2 29.6-67.5 3.9-117.2-.7-1.4-.2-3.1 1.2-3.9 1.4-.7 3.1-.2 3.9 1.2 27 52.2 11.4 87.8-3.7 122.2-1.9 4.3-3.7 8.5-5.5 12.6 4.5 2.9 64.8 39.9 144.7-.1-1.7-4.2-3.6-8.4-5.4-12.6-15.1-34.4-30.7-70-3.7-122.2.7-1.4 2.5-2 3.9-1.2 1.4.7 2 2.5 1.2 3.9-25.8 49.8-10.7 84 3.9 117.2 9.1 21.1 17.8 41 16.6 64.2zm23.6 42.9c-1.1 1.9-3 2.9-5 2.9-1 0-1.9-.2-2.8-.7-2.8-1.5-3.8-5-2.2-7.8.3-.5 15.8-30.4-4.4-83.4-1.1-3 .4-6.3 3.3-7.4 3-1.1 6.3.4 7.4 3.3 22.4 58.6 4.5 91.7 3.7 93.1z"/></g></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity=".85"><path class="st1" d="M245.4 496.3c-2.3 5.9-4.4 11.9-5.9 17.9.2 0 .4.1.6.1 2.2.7 54.3 17.6 76.1 54 1.5 2.6 2.8 5.3 3.8 8.2 1-2.9 2.3-5.6 3.8-8.2 21.8-36.4 73.9-53.3 76.1-54 .2-.1.4-.1.6-.1-1.5-6.1-3.6-12.1-5.9-18-28.4 14.1-54.4 18.8-76.6 18.8-39.4 0-66.5-15-72.6-18.7z"/><path class="st1" d="M0-.3v974.9h639.9V-.3H0zm320 468c2.8 0 5.1 2.3 5.1 5.1s-2.3 5.1-5.1 5.1-5.1-2.3-5.1-5.1c-.1-2.8 2.2-5.1 5.1-5.1zM221.8 494c-20.4 53.6-4.5 83-4.4 83.3 1.6 2.8.6 6.3-2.2 7.8-.9.5-1.9.7-2.8.7-2 0-4-1.1-5-2.9-.8-1.4-18.7-34.5 3.7-93.1 1.1-3 4.5-4.5 7.4-3.3 3 1.2 4.5 4.6 3.3 7.5zm187.1 46.1c.1 47.4-19.2 72-20 73-.6.7-1.4 1.1-2.2 1.1-.6 0-1.3-.2-1.8-.6-1.2-1-1.4-2.8-.4-4 .2-.2 18.8-24.1 18.8-69.5.4-7-.3-13.7-1.5-20.2h-.1c-.5.2-52.2 16.9-72.9 51.5-3.6 6.1-5.5 13.3-5.5 20.8.1 18.8-.1 25.6-.1 25.8 0 1.6-1.3 2.8-2.9 2.8h-.5-.1c-1.6 0-2.8-1.2-2.9-2.8 0-.3-.2-7-.1-25.8 0-7.6-1.9-14.8-5.5-20.8-20.7-34.6-72.4-51.3-72.9-51.5h-.1c-1.3 6.5-1.9 13.2-1.5 20.1-.1 45.7 18.6 69.4 18.8 69.7 1 1.2.8 3.1-.4 4-.5.4-1.2.6-1.8.6-.8 0-1.7-.4-2.2-1.1-.8-1-20.1-25.6-20-73.1-1.2-23.1 7.6-43 16.8-64.1 14.6-33.2 29.6-67.5 3.9-117.2-.7-1.4-.2-3.1 1.2-3.9 1.4-.7 3.1-.2 3.9 1.2 27 52.2 11.4 87.8-3.7 122.2-1.9 4.3-3.7 8.5-5.5 12.6 4.5 2.9 64.8 39.9 144.7-.1-1.7-4.2-3.6-8.4-5.4-12.6-15.1-34.4-30.7-70-3.7-122.2.7-1.4 2.5-2 3.9-1.2 1.4.7 2 2.5 1.2 3.9-25.8 49.8-10.7 84 3.9 117.2 9.1 21.1 17.8 41 16.6 64.2zm23.6 42.9c-1.1 1.9-3 2.9-5 2.9-1 0-1.9-.2-2.8-.7-2.8-1.5-3.8-5-2.2-7.8.3-.5 15.8-30.4-4.4-83.4-1.1-3 .4-6.3 3.3-7.4 3-1.1 6.3.4 7.4 3.3 22.4 58.6 4.5 91.7 3.7 93.1z"/></g></svg>')
+    &__block
+      color: $color-white
+      position: absolute
+      left: 70px
+      right: 70px
+      bottom: 150px
+      font-size: 16px
+    &__btn
+      position: absolute
+      z-index: 10
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border: 1px solid $color-white
+      color: $color-white
+      text-decoration: none
+      height: 65px
+      line-height: 61px
+      width: 200px
+      text-align: center
+      border-radius: 35px
+      background: rgba($color-white,.12)
+      &:hover, &:focus
+        color: $color-white
+        background: rgba($color-white,.5)
+    &__more
+      color: $color-white
+      text-decoration: none
+      font-family: $font-roboto-medium
+      text-shadow: 0 0 0 #bed5ff
+      .fa
+        margin-left: 5px
+      &:hover, &:focus
+        color: $color-white
+        text-shadow: 0 5px 16px #bed5ff
+  &3
+    background:
+      image: url('../img/bg/bg-section-3.jpg')
+    &__wrapper
+      &>div
+        background:
+          color: rgba(#190e27,.65)
+        &:nth-child(2)
+          background-color: rgba(#190e27,.55)
+        &:hover
+          background-color: rgba(#190e27,0)
+        &.div1
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style></style><path d="M0 0v974.9h639.9V0H0zm236 486.5c-1.7 0-3.5-.6-4.9-1.7-3.4-2.7-4-7.7-1.2-11.1 35.4-44.3 42.9-90.9 42.9-98.2 0-4.4 3.5-7.9 7.9-7.9s7.9 3.5 7.9 7.9c0 9.9-8.3 60.4-46.4 108.1-1.6 1.9-3.9 2.9-6.2 2.9zm127.6 150c-2.2 0-4-1.8-4-4 0-16.9-2.8-24.8-10.1-28.4-2.7-1.3-8.8-1.5-15.8-1.7-15.5-.4-38.8-1.1-62.9-14.5-8.8-4.8-14.5-11.7-16.8-20.6-2.9-11.3.3-25.7 8.5-38.3 2.1-3.2 4.4-6.6 7.1-10.5 11.7-17 29.5-42.6 49.7-90.4 10.8-23.2 15-77.3 15.1-77.9.2-2.2 2-3.8 4.2-3.6 2.2.2 3.8 2.1 3.6 4.2-.2 2.3-4.4 56.2-15.7 80.5-20.5 48.5-38.5 74.5-50.4 91.7-2.7 3.9-5 7.2-7 10.3-7 10.9-9.8 22.8-7.5 32.1 1.7 6.7 6 11.9 12.9 15.6 22.4 12.5 43.8 13 59.3 13.5 8.6.2 14.8.4 19.1 2.5 12.8 6.3 14.6 20.7 14.6 35.5.1 2.3-1.7 4-3.9 4zm43.5-70.7c-3 7.5-8.3 13-15.4 15.8-3.5 1.4-7.3 2.1-11.5 2.1-7.1 0-15-2-23.5-6-9.7-4.9-26.1-4.2-30.3 3.2-1.1 1.9-3.5 2.6-5.4 1.5-1.9-1.1-2.6-3.5-1.5-5.4 7.2-12.7 28.8-12.3 40.6-6.4 11.4 5.3 21.3 6.6 28.6 3.7 6.3-2.5 9.4-7.6 10.9-11.4 12.3-31-17-43.7-18.2-44.2-2-.8-3-3.2-2.1-5.2.8-2 3.1-3 5.2-2.1.4.1 37.8 16.1 22.6 54.4z" opacity="0" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style></style><path d="M0 0v974.9h639.9V0H0zm236 486.5c-1.7 0-3.5-.6-4.9-1.7-3.4-2.7-4-7.7-1.2-11.1 35.4-44.3 42.9-90.9 42.9-98.2 0-4.4 3.5-7.9 7.9-7.9s7.9 3.5 7.9 7.9c0 9.9-8.3 60.4-46.4 108.1-1.6 1.9-3.9 2.9-6.2 2.9zm127.6 150c-2.2 0-4-1.8-4-4 0-16.9-2.8-24.8-10.1-28.4-2.7-1.3-8.8-1.5-15.8-1.7-15.5-.4-38.8-1.1-62.9-14.5-8.8-4.8-14.5-11.7-16.8-20.6-2.9-11.3.3-25.7 8.5-38.3 2.1-3.2 4.4-6.6 7.1-10.5 11.7-17 29.5-42.6 49.7-90.4 10.8-23.2 15-77.3 15.1-77.9.2-2.2 2-3.8 4.2-3.6 2.2.2 3.8 2.1 3.6 4.2-.2 2.3-4.4 56.2-15.7 80.5-20.5 48.5-38.5 74.5-50.4 91.7-2.7 3.9-5 7.2-7 10.3-7 10.9-9.8 22.8-7.5 32.1 1.7 6.7 6 11.9 12.9 15.6 22.4 12.5 43.8 13 59.3 13.5 8.6.2 14.8.4 19.1 2.5 12.8 6.3 14.6 20.7 14.6 35.5.1 2.3-1.7 4-3.9 4zm43.5-70.7c-3 7.5-8.3 13-15.4 15.8-3.5 1.4-7.3 2.1-11.5 2.1-7.1 0-15-2-23.5-6-9.7-4.9-26.1-4.2-30.3 3.2-1.1 1.9-3.5 2.6-5.4 1.5-1.9-1.1-2.6-3.5-1.5-5.4 7.2-12.7 28.8-12.3 40.6-6.4 11.4 5.3 21.3 6.6 28.6 3.7 6.3-2.5 9.4-7.6 10.9-11.4 12.3-31-17-43.7-18.2-44.2-2-.8-3-3.2-2.1-5.2.8-2 3.1-3 5.2-2.1.4.1 37.8 16.1 22.6 54.4z" opacity=".85" fill="%231b1128"/></svg>')
+        &.div2
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style></style><path d="M0-.3v974.9h639.9V-.3H0zm205.8 482.7c.2.1.5.1.7.3 13.2 8.9 50.2 12.6 68.3 6.9 10.5-4 15.6-3.8 24.6-2.5 1.2.2 2.1 1.3 1.9 2.5-.2 1.2-1.3 2.1-2.5 1.9-8.4-1.2-12.8-1.4-22.5 2.3-6.4 2-14.8 3-23.8 3-15.9 0-33.5-3-44.1-8 2.2 4.5 5.6 10.4 10.7 17 11.8 15.1 37.8 40.8 80.1 42.3 1.2 0 2.2 1.1 2.1 2.3 0 1.2-1 2.1-2.2 2.1h-.1c-64.4-2.3-95.9-58.8-97.8-70.8-.5-3.4.8-4.7 1.9-5.1 13.7-5 20.1-9.6 38.4-27.4 25.1-25.1 41.6-23.1 58.8-12.3 1 .6 1.4 2 .7 3.1-.6 1-2 1.4-3.1.7-12.9-8.1-27.7-13.8-53.3 11.7-18.5 18-25.3 22.9-39.1 28.1-.1.4.1 1.1.3 1.9zM319.5 591a6.7 6.7 0 0 1-13.4 0V392.4a6.7 6.7 0 0 1 13.4 0V591zM441 480.4c-3 19-43.1 80-114 82.6h-.1c-1.8 0-3.3-1.4-3.3-3.2-.1-1.8 1.4-3.4 3.2-3.5 46.1-1.7 75.5-28.7 89-44.7 6.9-8.2 11.7-15.8 14.7-21.7-12.6 5.3-32 8.5-49.6 8.5-10.4 0-20.1-1.1-27.5-3.4-11.3-4.3-16.1-4.1-25.9-2.7-1.8.3-3.5-1-3.8-2.8-.3-1.8 1-3.5 2.8-3.8 10.6-1.5 16.5-1.7 29.1 3 20.2 6.4 63.4 2 78.2-8l.6-.3c.1-.4.2-.8.2-1.1-15.8-6-23.8-11.8-45-32.4-29.3-29.3-46.1-22.7-60.8-13.5-1.6 1-3.6.5-4.6-1.1-1-1.6-.5-3.6 1.1-4.6 17.5-10.9 37.9-16.7 69 14.4 21.2 20.6 28.2 25.7 44.2 31.5 1.1.5 3.3 2 2.5 6.8z" opacity="0" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style></style><path d="M0-.3v974.9h639.9V-.3H0zm205.8 482.7c.2.1.5.1.7.3 13.2 8.9 50.2 12.6 68.3 6.9 10.5-4 15.6-3.8 24.6-2.5 1.2.2 2.1 1.3 1.9 2.5-.2 1.2-1.3 2.1-2.5 1.9-8.4-1.2-12.8-1.4-22.5 2.3-6.4 2-14.8 3-23.8 3-15.9 0-33.5-3-44.1-8 2.2 4.5 5.6 10.4 10.7 17 11.8 15.1 37.8 40.8 80.1 42.3 1.2 0 2.2 1.1 2.1 2.3 0 1.2-1 2.1-2.2 2.1h-.1c-64.4-2.3-95.9-58.8-97.8-70.8-.5-3.4.8-4.7 1.9-5.1 13.7-5 20.1-9.6 38.4-27.4 25.1-25.1 41.6-23.1 58.8-12.3 1 .6 1.4 2 .7 3.1-.6 1-2 1.4-3.1.7-12.9-8.1-27.7-13.8-53.3 11.7-18.5 18-25.3 22.9-39.1 28.1-.1.4.1 1.1.3 1.9zM319.5 591a6.7 6.7 0 0 1-13.4 0V392.4a6.7 6.7 0 0 1 13.4 0V591zM441 480.4c-3 19-43.1 80-114 82.6h-.1c-1.8 0-3.3-1.4-3.3-3.2-.1-1.8 1.4-3.4 3.2-3.5 46.1-1.7 75.5-28.7 89-44.7 6.9-8.2 11.7-15.8 14.7-21.7-12.6 5.3-32 8.5-49.6 8.5-10.4 0-20.1-1.1-27.5-3.4-11.3-4.3-16.1-4.1-25.9-2.7-1.8.3-3.5-1-3.8-2.8-.3-1.8 1-3.5 2.8-3.8 10.6-1.5 16.5-1.7 29.1 3 20.2 6.4 63.4 2 78.2-8l.6-.3c.1-.4.2-.8.2-1.1-15.8-6-23.8-11.8-45-32.4-29.3-29.3-46.1-22.7-60.8-13.5-1.6 1-3.6.5-4.6-1.1-1-1.6-.5-3.6 1.1-4.6 17.5-10.9 37.9-16.7 69 14.4 21.2 20.6 28.2 25.7 44.2 31.5 1.1.5 3.3 2 2.5 6.8z" opacity=".85" fill="%231b1128"/></svg>')
+        &.div3
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity="0"><path class="st1" d="M375.8 527.9l6.9-7.6c.5-.5 1.1-.8 1.7-1l10-2-26.3-25 7.7 35.6zM327.6 541.1c-1 0-1.8.8-3.1 2.2-1.3 1.4-2.8 3.2-5.2 3.2-2.3 0-3.8-1.8-5-3.2-1.2-1.4-2-2.3-3-2.3-6 0-10.5 5-14.8 9.7-2.3 2.6-4.6 5-7.1 6.8 20.6 5.8 40 5.8 60.1 0-2.5-1.8-4.8-4.3-7.1-6.9-4.3-4.6-8.7-9.5-14.8-9.5z"/><path class="st1" d="M291.1 562.5c4.5 10.3 15.6 17.2 28.4 17.2 12.8 0 23.9-6.9 28.4-17.2-9.5 2.5-18.8 3.7-28.1 3.7-9.5 0-18.9-1.2-28.7-3.7z"/><path class="st1" d="M0-.3v974.9h639.9V-.3H0zm201.4 381.1c-1.4-1-1.8-3-.8-4.4 11-15.8 29-25.2 48.1-25.2 22.3 0 42.4 12.4 52.4 32.3 21.4 38.9 9.3 74.5-5.4 104.2-1.6 3.3-1.9 6-.7 8.1 1.5 2.7 5.7 4.5 11.4 5 5.2.4 22.1 0 22.3 0h.1c1.7 0 3.1 1.4 3.2 3.1 0 1.8-1.3 3.2-3.1 3.3-.5 0-7.8.2-14.4.2-3.5 0-6.7-.1-8.6-.2-8-.7-13.8-3.6-16.4-8.2-1.6-2.8-2.7-7.4.5-14 14.6-29.6 25.4-62.1 5.4-98.4-9-17.9-26.9-28.9-46.8-28.9-17.1 0-33.1 8.4-42.9 22.4-.8 1.4-2.8 1.7-4.3.7zM430.7 431c.6 1 .2 2.3-.8 2.9-.3.2-.7.3-1.1.3-.7 0-1.4-.4-1.8-1.1l-4.8-8.2c-2.9 2.2-6 4-9.2 5.5l4 9.2c.5 1.1 0 2.3-1.1 2.8-.3.1-.6.2-.8.2-.8 0-1.6-.5-1.9-1.3l-4-9.2c-3.6 1.4-7.4 2.3-11.3 2.9v10.2c0 1.2-.9 2.1-2.1 2.1-1.2 0-2.1-1-2.1-2.1v-9.8c-.8 0-1.7.1-2.5.1-12.9 0-25.1-4.8-35.2-13.9-.9-.8-.9-2.1-.2-3 .8-.9 2.1-.9 3-.2 9.4 8.4 20.6 12.8 32.4 12.8 13.4 0 26.3-5.8 36.1-16.5.8-.9 2.1-.9 3-.1.9.8.9 2.1.1 3-1.5 1.6-3.1 3.2-4.8 4.6l5.1 8.8zm-32.8 107.8c.9 1.5.3 3.5-1.2 4.3-.5.3-1 .4-1.6.4-1.1 0-2.2-.6-2.8-1.6l-7.9-14.1-8.1 8.9c-.6.7-1.5 1-2.4 1-.3 0-.6 0-.8-.1-1.1-.3-2-1.2-2.3-2.4l-11.1-51.6c-.3-1.4.3-2.8 1.6-3.4 1.2-.7 2.7-.5 3.8.5l38.3 36.3c.9.8 1.2 2.1.9 3.2-.3 1.1-1.3 2-2.4 2.2l-11.8 2.3 7.8 14.1zm-38.1-69.3c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zM356 556c.1 0 .1.1.2.1s.2.1.4.1c.8.4 1.4 1.2 1.2 2.2-.1 1-1 1.7-2 1.8-1 .3-1.9.6-2.9.9-4.1 13.5-17.7 22.9-33.4 22.9-15.8 0-29.3-9.4-33.4-22.9l-3-.9c-1-.1-1.8-.8-1.9-1.8-.1-.9.4-1.8 1.2-2.2.1-.1.3-.1.4-.1.1 0 .1-.1.2-.1 3.6-.5 6.9-4.1 10.4-8 4.7-5.2 10.1-11.1 18-11.1 3.1 0 5 2.2 6.3 3.8.5.7 1.4 1.7 1.7 1.7.5 0 1.3-1 2-1.8 1.4-1.6 3.2-3.7 6.2-3.7 7.9 0 13.3 5.9 18 11.1 3.5 3.8 6.8 7.5 10.4 8zM248.8 435.5c-.8 0-1.7 0-2.5-.1v9.8c0 1.2-.9 2.1-2.1 2.1-1.2 0-2.1-1-2.1-2.1V435c-3.9-.5-7.6-1.5-11.3-2.9l-4 9.2c-.3.8-1.1 1.3-2 1.3-.3 0-.6-.1-.8-.2-1.1-.5-1.6-1.7-1.1-2.8l4-9.2c-3.2-1.5-6.3-3.4-9.2-5.5l-4.8 8.2c-.4.7-1.1 1.1-1.8 1.1-.4 0-.7-.1-1.1-.3-1-.6-1.4-1.9-.8-2.9l5.1-8.7c-1.7-1.4-3.3-3-4.8-4.6-.8-.9-.8-2.2.1-3 .9-.8 2.2-.8 3 .1 9.9 10.6 22.7 16.5 36.1 16.5 11.8 0 23-4.4 32.4-12.8.9-.8 2.2-.7 3 .2.8.9.7 2.2-.2 3-10 9-22.2 13.8-35.1 13.8zm16.4 46.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zm-19.6 38.9c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zm147.9 58.7c-23.5 27-52.3 44.4-73.4 44.4s-50-17.4-73.4-44.4c-16-18.4-42.9-57.1-42.9-109.4 0-1.8 1.4-3.2 3.2-3.2s3.2 1.4 3.2 3.2c0 83.7 73.3 147.4 109.9 147.4S430 553.5 430 469.8c0-1.8 1.4-3.2 3.2-3.2 1.8 0 3.2 1.4 3.2 3.2 0 52.3-26.9 91-42.9 109.4zm45-198.4c-1.4 1-3.4.7-4.4-.8-9.8-14-25.8-22.4-42.9-22.4-19.9 0-37.8 11-46.7 28.8-.6 1.1-1.7 1.8-2.8 1.8-.5 0-1-.1-1.4-.3-1.6-.8-2.2-2.7-1.4-4.3 10-19.9 30.1-32.3 52.4-32.3 19.2 0 37.2 9.4 48.1 25.2.9 1.3.5 3.3-.9 4.3z"/></g></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639.9 974.9"><style>.st1{fill:%231b1128}</style><g opacity=".85"><path class="st1" d="M375.8 527.9l6.9-7.6c.5-.5 1.1-.8 1.7-1l10-2-26.3-25 7.7 35.6zM327.6 541.1c-1 0-1.8.8-3.1 2.2-1.3 1.4-2.8 3.2-5.2 3.2-2.3 0-3.8-1.8-5-3.2-1.2-1.4-2-2.3-3-2.3-6 0-10.5 5-14.8 9.7-2.3 2.6-4.6 5-7.1 6.8 20.6 5.8 40 5.8 60.1 0-2.5-1.8-4.8-4.3-7.1-6.9-4.3-4.6-8.7-9.5-14.8-9.5z"/><path class="st1" d="M291.1 562.5c4.5 10.3 15.6 17.2 28.4 17.2 12.8 0 23.9-6.9 28.4-17.2-9.5 2.5-18.8 3.7-28.1 3.7-9.5 0-18.9-1.2-28.7-3.7z"/><path class="st1" d="M0-.3v974.9h639.9V-.3H0zm201.4 381.1c-1.4-1-1.8-3-.8-4.4 11-15.8 29-25.2 48.1-25.2 22.3 0 42.4 12.4 52.4 32.3 21.4 38.9 9.3 74.5-5.4 104.2-1.6 3.3-1.9 6-.7 8.1 1.5 2.7 5.7 4.5 11.4 5 5.2.4 22.1 0 22.3 0h.1c1.7 0 3.1 1.4 3.2 3.1 0 1.8-1.3 3.2-3.1 3.3-.5 0-7.8.2-14.4.2-3.5 0-6.7-.1-8.6-.2-8-.7-13.8-3.6-16.4-8.2-1.6-2.8-2.7-7.4.5-14 14.6-29.6 25.4-62.1 5.4-98.4-9-17.9-26.9-28.9-46.8-28.9-17.1 0-33.1 8.4-42.9 22.4-.8 1.4-2.8 1.7-4.3.7zM430.7 431c.6 1 .2 2.3-.8 2.9-.3.2-.7.3-1.1.3-.7 0-1.4-.4-1.8-1.1l-4.8-8.2c-2.9 2.2-6 4-9.2 5.5l4 9.2c.5 1.1 0 2.3-1.1 2.8-.3.1-.6.2-.8.2-.8 0-1.6-.5-1.9-1.3l-4-9.2c-3.6 1.4-7.4 2.3-11.3 2.9v10.2c0 1.2-.9 2.1-2.1 2.1-1.2 0-2.1-1-2.1-2.1v-9.8c-.8 0-1.7.1-2.5.1-12.9 0-25.1-4.8-35.2-13.9-.9-.8-.9-2.1-.2-3 .8-.9 2.1-.9 3-.2 9.4 8.4 20.6 12.8 32.4 12.8 13.4 0 26.3-5.8 36.1-16.5.8-.9 2.1-.9 3-.1.9.8.9 2.1.1 3-1.5 1.6-3.1 3.2-4.8 4.6l5.1 8.8zm-32.8 107.8c.9 1.5.3 3.5-1.2 4.3-.5.3-1 .4-1.6.4-1.1 0-2.2-.6-2.8-1.6l-7.9-14.1-8.1 8.9c-.6.7-1.5 1-2.4 1-.3 0-.6 0-.8-.1-1.1-.3-2-1.2-2.3-2.4l-11.1-51.6c-.3-1.4.3-2.8 1.6-3.4 1.2-.7 2.7-.5 3.8.5l38.3 36.3c.9.8 1.2 2.1.9 3.2-.3 1.1-1.3 2-2.4 2.2l-11.8 2.3 7.8 14.1zm-38.1-69.3c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zM356 556c.1 0 .1.1.2.1s.2.1.4.1c.8.4 1.4 1.2 1.2 2.2-.1 1-1 1.7-2 1.8-1 .3-1.9.6-2.9.9-4.1 13.5-17.7 22.9-33.4 22.9-15.8 0-29.3-9.4-33.4-22.9l-3-.9c-1-.1-1.8-.8-1.9-1.8-.1-.9.4-1.8 1.2-2.2.1-.1.3-.1.4-.1.1 0 .1-.1.2-.1 3.6-.5 6.9-4.1 10.4-8 4.7-5.2 10.1-11.1 18-11.1 3.1 0 5 2.2 6.3 3.8.5.7 1.4 1.7 1.7 1.7.5 0 1.3-1 2-1.8 1.4-1.6 3.2-3.7 6.2-3.7 7.9 0 13.3 5.9 18 11.1 3.5 3.8 6.8 7.5 10.4 8zM248.8 435.5c-.8 0-1.7 0-2.5-.1v9.8c0 1.2-.9 2.1-2.1 2.1-1.2 0-2.1-1-2.1-2.1V435c-3.9-.5-7.6-1.5-11.3-2.9l-4 9.2c-.3.8-1.1 1.3-2 1.3-.3 0-.6-.1-.8-.2-1.1-.5-1.6-1.7-1.1-2.8l4-9.2c-3.2-1.5-6.3-3.4-9.2-5.5l-4.8 8.2c-.4.7-1.1 1.1-1.8 1.1-.4 0-.7-.1-1.1-.3-1-.6-1.4-1.9-.8-2.9l5.1-8.7c-1.7-1.4-3.3-3-4.8-4.6-.8-.9-.8-2.2.1-3 .9-.8 2.2-.8 3 .1 9.9 10.6 22.7 16.5 36.1 16.5 11.8 0 23-4.4 32.4-12.8.9-.8 2.2-.7 3 .2.8.9.7 2.2-.2 3-10 9-22.2 13.8-35.1 13.8zm16.4 46.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zm-19.6 38.9c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.9-6.5 6.5-6.5 6.5 2.9 6.5 6.5zm147.9 58.7c-23.5 27-52.3 44.4-73.4 44.4s-50-17.4-73.4-44.4c-16-18.4-42.9-57.1-42.9-109.4 0-1.8 1.4-3.2 3.2-3.2s3.2 1.4 3.2 3.2c0 83.7 73.3 147.4 109.9 147.4S430 553.5 430 469.8c0-1.8 1.4-3.2 3.2-3.2 1.8 0 3.2 1.4 3.2 3.2 0 52.3-26.9 91-42.9 109.4zm45-198.4c-1.4 1-3.4.7-4.4-.8-9.8-14-25.8-22.4-42.9-22.4-19.9 0-37.8 11-46.7 28.8-.6 1.1-1.7 1.8-2.8 1.8-.5 0-1-.1-1.4-.3-1.6-.8-2.2-2.7-1.4-4.3 10-19.9 30.1-32.3 52.4-32.3 19.2 0 37.2 9.4 48.1 25.2.9 1.3.5 3.3-.9 4.3z"/></g></svg>')
+  &4, &6
+    background: $color-white
+    color: $primary-color
+    &__content
+      transform: translateY(-50%) translateX(113px)
+      position: absolute
+      left: 50%
+      max-width: 590px
+      p
+        &:last-child
+          margin-bottom: 0
+  &4
+    &__slider
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      width: 50%
+      background: #e9f6f9
+      &-wrapper
+        height: 100vh
+        .slick-list, .slick-track, .slick-slide
+          height: 100%
+          &:focus
+            outline: none
+      &-block
+        height: 100%
+        display: flex
+        flex-direction: column
+        &>div
+          height: 50%
+          position: relative
+          img
+            height: 100%
+            width: 100%
+            object-fit: cover
+      &-bottom
+        &::after
+          position: absolute
+          top: 0
+          right: 0
+          z-index: 2
+          bottom: 0
+          left: 0
+          opacity: 0.5
+          background: $color-white
+          content: ''
+      &-btn
+        height: 45px
+        width: 150px
+        border-radius: 3px
+        background: $color-eee
+        color: $primary-color
+        line-height: 45px
+        text-align: center
+        position: absolute
+        z-index: 5
+        right: 30px
+        bottom: 30px
+        font-size: 14px
+        &--top
+          bottom: inherit
+          top: 30px
+      .slick-dots
+        bottom: 20px
+        li
+          height: 11px
+          width: 11px
+          margin: 0 10px
+          button
+            height: 10px
+            width: 10px
+            font-size: 0
+            border: 1px solid $color-white
+            background: $color-white
+            border-radius: 50%
+            &::before
+              display: none
+          &.slick-active
+            button
+              background: transparent
+  &5
+    background: $color-white
+    color: $primary-color
+    &__content
+      transform: translateY(-50%) translateX(-217px)
+      position: absolute
+      left: 0
+      max-width: 640px
+      p
+        &:last-child
+          margin-bottom: 0
+    &__img
+      position: absolute
+      width: 50%
+      top: 0
+      right: 0
+      bottom: 0
+      background: $color-eee
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        margin-left: 60px
+  &6
+    &__wrapper
+      position: absolute
+      left: 0
+      width: 50%
+      top: 0
+      bottom: 0
+      display: flex
+      flex-wrap: wrap
+      &>div
+        width: 50%
+        height: 50%
+    &__block
+      height: 100%
+      position: relative
+      &-img
+        width: 100%
+        height: 100%
+        object-fit: cover
+      &-title
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba($color-white,.85)
+        min-height: 60px
+        font-size: 20px
+        padding: 15px 10px
+        font-family: $font-roboto-bold
+        text-align: center
+        z-index: 10
+        transition: all 0.35s
+        svg
+          width: 30px
+          height: 30px
+          display: inline-block
+          vertical-align: -8px
+          margin-right: 10px
+          path
+            fill: #444444
+            transition: fill 0.35s
+      &-text
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: rgba($color-black,.6)
+        color: $color-white
+        font-size: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: $font-roboto-light
+        z-index: 5
+        opacity: 0
+        visibility: hidden
+        transition: all 0.35s
+        &>div
+          max-width: 300px
+      &:hover
+        .section6__block
+          &-title
+            background: transparent
+            color: $color-white
+            svg
+              path
+                fill: $color-white
+          &-text
+            opacity: 1
+            visibility: visible
+  &7
+    background: $color-eee
+    .section__container
+      height: auto
+      background: none
+    &__slider
+      background: $color-white
+      &-block
+        color: $primary-color
+        font-size: 16px
+        padding: 35px 20px 20px 20px
+        height: 100%
+        p
+          // max-height: 90px
+          overflow: hidden
+      &-title
+        font-size: 24px
+        font-family: $font-roboto-bold
+        margin-bottom: 10px
+      &-time
+        font-size: 14px
+        white-space: nowrap
+        i
+          display: inline-block
+          vertical-align: 1px
+          margin-right: 5px
+      .slick
+        &-slide
+          &:focus
+            outline: none
+        &-dots
+          bottom: -40px
+          li
+            height: 11px
+            width: 11px
+            margin: 0 10px
+            button
+              height: 10px
+              width: 10px
+              font-size: 0
+              border: 1px solid $primary-color
+              background: $primary-color
+              border-radius: 50%
+              &::before
+                display: none
+            &.slick-active
+              button
+                background: transparent
+  &8
+    background: $color-white
+    &--gray
+      background: $color-eee
+    .section__container
+      height: auto
+      background: none
+    &__row
+      display: flex
+      margin: 0 -15px 50px -15px
+      &>div
+        padding: 0 15px
+        width: 33.3%
+      &--carousel
+        display: block
+        margin-left: 0
+        margin-right: 0
+        &>div
+          padding: 0
+          width: auto
+        .slick-slide
+          padding: 1px 15px
+          &:focus
+            outline: none
+    &__block
+      color: $primary-color
+      box-shadow: 0 0 0 1px $color-eee
+      font-size: 16px
+      height: 100%
+      background: $color-white
+      &-title
+        text-decoration: none
+        color: $primary-color
+        font-size: 24px
+        font-family: $font-roboto-bold
+        display: inline-block
+        margin-bottom: 10px
+        line-height: 25px
+        &:hover, &:focus
+          color: #705dd8
+      &-img
+        overflow: hidden
+        img
+          transform: scale(1)
+          transform-origin: 50% 50%
+          transition: transform 0.35s
+      &-content
+        padding: 15px 20px
+        p
+          margin-bottom: 15px
+          max-height: 70px
+          overflow: hidden
+      &-time
+        font-size: 14px
+        white-space: nowrap
+        i
+          display: inline-block
+          vertical-align: 1px
+          margin-right: 5px
+      &:hover
+        .section8__block-img
+          img
+            transform: scale(1.2)
+    &__btn
+      border: 1px solid $primary-color
+      color: $primary-color
+      text-decoration: none
+      height: 65px
+      line-height: 61px
+      width: 200px
+      text-align: center
+      border-radius: 35px
+      background: rgba($primary-color,.0)
+      margin: 0 auto
+      display: block
+      &:hover, &:focus
+        color: $color-white
+        background: rgba($primary-color,.5)
+    .slick
+      &-slide
+        &:focus
+          outline: none
+      &-dots
+        bottom: -40px
+        li
+          height: 11px
+          width: 11px
+          margin: 0 10px
+          button
+            height: 10px
+            width: 10px
+            font-size: 0
+            border: 1px solid $primary-color
+            background: $primary-color
+            border-radius: 50%
+            &::before
+              display: none
+          &.slick-active
+            button
+              background: transparent
+  &9
+    height: 100%
+    width: 100%
+    position: relative
+    overflow: hidden
+    color: $color-white
+    background:
+      color: #822ece
+      image: url('../img/bg/bg-section-9.png')
+      position: center center
+      repeat: no-repeat
+      size: cover
+    &__phone
+      position: absolute
+      z-index: 5
+      right: 125px
+      bottom: 0
+    &__content
+      height: 100%
+      display: flex
+      align-items: center
+    &__logo
+      padding-left: 144px
+      position: relative
+      height: 103px
+      margin-bottom: 32px
+      z-index: 15
+      &::before
+        content: 'Retouch Body'
+        font-size: 203px
+        font-family: $font-roboto-bold
+        line-height: 0.8
+        position: absolute
+        left: -12px
+        bottom: 0
+        color: rgba($color-white,.05)
+        white-space: nowrap
+      strong
+        display: block
+        line-height: 0.8
+        font-size: 67px
+        margin-bottom: 16px
+      span
+        display: block
+        line-height: 0.8
+        font-size: 42px
+      svg
+        position: absolute
+        width: 98px
+        height: 103px
+        left: 0
+        top: 0
+        g
+          fill: $color-white
+    p
+      line-height: 23px
+      margin-bottom: 30px
+    &__app
+      display: flex
+      position: relative
+      z-index: 20
+      a
+        display: flex
+        width: 200px
+        height: 65px
+        border-radius: 50px
+        background: $color-black
+        justify-content: center
+        align-items: center
+        color: $color-white
+        text-decoration: none
+        box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+        transition: box-shadow 0.35s
+        &:hover, &:focus
+          box-shadow: 0 0px 36px rgba(#bed5ff,.5)
+        &[disabled]
+          opacity: 0.5
+          cursor: default
+          &:hover, &:focus
+            box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+      &>div
+        &+div
+          padding-left: 55px
+    &--full
+      flex-shrink: 0
+  &10
+    background:
+      image: url('../img/bg/bg-section-10.jpg')
+    height: 100%
+    &__wrapper
+      &>div
+        &.div1
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0" d="M0 487.5V0h640v975H0zm354 46v-143h105v-57H180v57h103v286h71z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity=".85" d="M0 487.5V0h640v975H0zm354 46v-143h105v-57H180v57h103v286h71z" fill="%231b1128"/></svg>')
+        &.div2
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0" d="M0 487.5V0h640v975H0zm210.4 187.261c31.895-5.258 55.418-21.969 68.858-48.915 11.517-23.094 17.16-52.239 21.685-112 2.478-32.729 6.02-102.837 6.05-119.75l.01-3.75h92v286h71v-343h-230.76l-.647 11.25c-.356 6.187-1.538 39.15-2.627 73.25-1.088 34.1-2.44 70.325-3.005 80.5-3.554 64.085-9.9 91.24-25.122 107.513-7.915 8.46-15.397 12.19-28.817 14.364l-10.02 1.623v27.197l-.001 27.198 5.25.413c8.324.656 26.448-.293 36.149-1.893z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.85" d="M0 487.5V0h640v975H0zm210.4 187.261c31.895-5.258 55.418-21.969 68.858-48.915 11.517-23.094 17.16-52.239 21.685-112 2.478-32.729 6.02-102.837 6.05-119.75l.01-3.75h92v286h71v-343h-230.76l-.647 11.25c-.356 6.187-1.538 39.15-2.627 73.25-1.088 34.1-2.44 70.325-3.005 80.5-3.554 64.085-9.9 91.24-25.122 107.513-7.915 8.46-15.397 12.19-28.817 14.364l-10.02 1.623v27.197l-.001 27.198 5.25.413c8.324.656 26.448-.293 36.149-1.893z" fill="%231b1128"/></svg>')
+        &.div3
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0" d="M0 487.5V0h640v975H0zm238 155v-34h165v68h26.5c24.565 0 26.501-.128 26.517-1.75.01-.962.902-25.375 1.983-54.25s1.973-53.287 1.983-54.25L428 564.5v-231H247.208l-.623 7.75c-.343 4.263-1.524 24.175-2.624 44.25s-2.445 42.35-2.99 49.5c-5.108 67.006-14.73 103.961-31.958 122.75l-6.19 6.75H191.41c-10.207 0-11.41.185-11.394 1.75.01.963.902 25.375 1.983 54.25s1.973 53.288 1.983 54.25L238 676.5zm30.909-81.75c12.658-15.809 24.136-63.516 29.051-120.75 1.11-12.922 3.04-49.469 3.04-57.555V377.5h70v187H265.906z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.85" d="M0 487.5V0h640v975H0zm238 155v-34h165v68h26.5c24.565 0 26.501-.128 26.517-1.75.01-.962.902-25.375 1.983-54.25s1.973-53.287 1.983-54.25L428 564.5v-231H247.208l-.623 7.75c-.343 4.263-1.524 24.175-2.624 44.25s-2.445 42.35-2.99 49.5c-5.108 67.006-14.73 103.961-31.958 122.75l-6.19 6.75H191.41c-10.207 0-11.41.185-11.394 1.75.01.963.902 25.375 1.983 54.25s1.973 53.288 1.983 54.25L238 676.5zm30.909-81.75c12.658-15.809 24.136-63.516 29.051-120.75 1.11-12.922 3.04-49.469 3.04-57.555V377.5h70v187H265.906z" fill="%231b1128"/></svg>')
+  &11
+    height: 100vh
+    background: $color-gray
+    &__wrapper
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: inherit
+      display: flex
+      flex-direction: column
+      width: 375px
+      z-index: 10
+      &>div
+        position: relative
+        width: 100%
+        flex-grow: 1
+        transition: background 0.35s
+        background:
+          position: center center
+          repeat: no-repeat
+          size: cover
+          image: none
+        overflow: hidden
+        &.div1
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.65" d="M0 487.5V0h640v975H0zm354 46v-143h105v-57H180v57h103v286h71z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.85" d="M0 487.5V0h640v975H0zm354 46v-143h105v-57H180v57h103v286h71z" fill="%231b1128"/></svg>')
+        &.div2
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.65" d="M0 487.5V0h640v975H0zm210.4 187.261c31.895-5.258 55.418-21.969 68.858-48.915 11.517-23.094 17.16-52.239 21.685-112 2.478-32.729 6.02-102.837 6.05-119.75l.01-3.75h92v286h71v-343h-230.76l-.647 11.25c-.356 6.187-1.538 39.15-2.627 73.25-1.088 34.1-2.44 70.325-3.005 80.5-3.554 64.085-9.9 91.24-25.122 107.513-7.915 8.46-15.397 12.19-28.817 14.364l-10.02 1.623v27.197l-.001 27.198 5.25.413c8.324.656 26.448-.293 36.149-1.893z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.85" d="M0 487.5V0h640v975H0zm210.4 187.261c31.895-5.258 55.418-21.969 68.858-48.915 11.517-23.094 17.16-52.239 21.685-112 2.478-32.729 6.02-102.837 6.05-119.75l.01-3.75h92v286h71v-343h-230.76l-.647 11.25c-.356 6.187-1.538 39.15-2.627 73.25-1.088 34.1-2.44 70.325-3.005 80.5-3.554 64.085-9.9 91.24-25.122 107.513-7.915 8.46-15.397 12.19-28.817 14.364l-10.02 1.623v27.197l-.001 27.198 5.25.413c8.324.656 26.448-.293 36.149-1.893z" fill="%231b1128"/></svg>')
+        &.div3
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.65" d="M0 487.5V0h640v975H0zm238 155v-34h165v68h26.5c24.565 0 26.501-.128 26.517-1.75.01-.962.902-25.375 1.983-54.25s1.973-53.287 1.983-54.25L428 564.5v-231H247.208l-.623 7.75c-.343 4.263-1.524 24.175-2.624 44.25s-2.445 42.35-2.99 49.5c-5.108 67.006-14.73 103.961-31.958 122.75l-6.19 6.75H191.41c-10.207 0-11.41.185-11.394 1.75.01.963.902 25.375 1.983 54.25s1.973 53.288 1.983 54.25L238 676.5zm30.909-81.75c12.658-15.809 24.136-63.516 29.051-120.75 1.11-12.922 3.04-49.469 3.04-57.555V377.5h70v187H265.906z" fill="%231b1128"/></svg>')
+          &:hover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975"><path opacity="0.85" d="M0 487.5V0h640v975H0zm238 155v-34h165v68h26.5c24.565 0 26.501-.128 26.517-1.75.01-.962.902-25.375 1.983-54.25s1.973-53.287 1.983-54.25L428 564.5v-231H247.208l-.623 7.75c-.343 4.263-1.524 24.175-2.624 44.25s-2.445 42.35-2.99 49.5c-5.108 67.006-14.73 103.961-31.958 122.75l-6.19 6.75H191.41c-10.207 0-11.41.185-11.394 1.75.01.963.902 25.375 1.983 54.25s1.973 53.288 1.983 54.25L238 676.5zm30.909-81.75c12.658-15.809 24.136-63.516 29.051-120.75 1.11-12.922 3.04-49.469 3.04-57.555V377.5h70v187H265.906z" fill="%231b1128"/></svg>')
+        &.active
+          display: none
+    &__block
+      color: $color-white
+      position: absolute
+      left: 40px
+      right: 40px
+      bottom: 35px
+      font-size: 16px
+    &__btn
+      position: absolute
+      z-index: 15
+      left: 68px
+      bottom: 30px
+      border: 1px solid $color-white
+      color: $color-white
+      text-decoration: none
+      height: 65px
+      line-height: 61px
+      width: 200px
+      text-align: center
+      border-radius: 35px
+      background: rgba($color-white,.12)
+      &:hover, &:focus
+        color: $color-white
+        background: rgba($color-white,1)
+        color: $primary-color
+      &--app
+        left: 300px
+        width: 270px
+        border-color: $color-black
+        background: rgba($color-black,.6)
+        .fa
+          margin-left: 5px
+        &:hover
+          color: $color-white
+          background: rgba($color-black,1)
+      &--info
+        bottom: 150px
+        height: 50px
+        width: 50px
+        line-height: 50px
+        background: rgba($color-black,.2)
+        font-size: 24px
+        .fa-info-circle
+          display: none
+        span
+          display: none
+
+    &__more
+      color: $color-white
+      text-decoration: none
+      font-family: $font-roboto-medium
+      text-shadow: 0 0 0 #bed5ff
+      font-size: 16px
+      .fa
+        margin-left: 5px
+      &:hover, &:focus
+        color: $color-white
+        text-shadow: 0 5px 16px #bed5ff
+    &__img
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 5
+      img
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        object-fit: cover
+      &-resize
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 5
+        overflow: hidden
+        width: 50%
+      &-handle
+        position: absolute
+        left: 50%
+        top: 50%
+        bottom: 0
+        width: 0
+        cursor: ew-resize
+        z-index: 20
+        &>div
+          transform: translate(-48px,-48px)
+          width: 96px
+          height: 96px
+          border-radius: 50%
+          border: 2px dashed #6c2dbb
+          background: rgba($color-white,.5)
+          position: relative
+          &>div
+            background: $color-white
+            border-radius: 50%
+            position: absolute
+            left: 10px
+            top: 10px
+            right: 10px
+            bottom: 10px
+            text-align: center
+            .fa
+              color: #6c2dbb
+              line-height: 1
+              transform-origin: 50% 50%
+              font-size: 24px
+              position: absolute
+              left: 50%
+              top: 50%
+              transform: translate(-50%,-50%) rotate(90deg)
+        &.draggable
+          &:after
+            width: 70px
+            height: 70px
+            margin: -35px 0 0 -35px
+    &__head
+      position: absolute
+      left: 0
+      top: 0
+      right: 375px
+      height: 100px
+      background: rgba($color-black,.3)
+      z-index: 20
+      padding: 15px
+      &-wrapper
+        display: table
+        table-layout: fixed
+        width: 100%
+        &>div
+          display: table-cell
+          &:first-child
+            min-width: 165px
+            width: 165px
+            max-width: 165px
+            padding-left: 20px
+            vertical-align: middle
+      &-title
+        text-align: center
+        strong
+          display: block
+          font-size: 34px
+          line-height: 1
+      &-body
+        overflow: hidden
+        padding: 0 60px
+        +clearfix
+        .slick-list
+          border-left: 1px solid $color-white
+          border-right: 1px solid $color-white
+        .slick-slide
+          a
+            text-align: center
+            display: block
+            height: 70px
+            line-height: 70px
+            text-decoration: none
+            color: $color-white
+            padding: 0 15px
+            background: rgba($color-white,0)
+            &:hover
+              background: rgba($color-white,.1)
+        .slick-current
+          a
+            background: rgba($color-white,.1)
+        .slick-prev
+          width: 60px
+          height: 70px
+          left: 0
+          &::before
+            font-family: inherit
+
+        .slick-next
+          right: 0
+          width: 60px
+          height: 70px
+          &::before
+            font-family: inherit
+  &12
+    background: $color-white
+    color: $primary-color
+    padding: 85px 0
+  &13
+    background: $color-white
+    color: $primary-color
+    &__content
+      transform: translateY(-50%) translateX(-217px)
+      position: absolute
+      left: 0
+      max-width: 640px
+      p
+        &:last-child
+          margin-bottom: 0
+    &__slider
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      width: 50%
+      background: #e9f6f9
+      &-wrapper
+        height: 100vh
+        .slick-list, .slick-track, .slick-slide
+          height: 100%
+          &:focus
+            outline: none
+        &>div
+          height: 100%
+      &-block
+        height: 100%
+        display: flex
+        &>div
+          height: 100%
+          width: 50%
+          position: relative
+          img
+            height: 100%
+            width: 100%
+            object-fit: cover
+      &-bottom
+        img
+          opacity: 0.5
+      &-btn
+        height: 45px
+        width: 150px
+        border-radius: 3px
+        background: $color-eee
+        color: $primary-color
+        line-height: 45px
+        text-align: center
+        position: absolute
+        z-index: 5
+        right: 30px
+        bottom: 30px
+        font-size: 14px
+        &--top
+          left: 30px
+          bottom: 30px
+      .slick-dots
+        bottom: 20px
+        li
+          height: 11px
+          width: 11px
+          margin: 0 10px
+          button
+            height: 10px
+            width: 10px
+            font-size: 0
+            border: 1px solid $color-white
+            background: $color-white
+            border-radius: 50%
+            &::before
+              display: none
+          &.slick-active
+            button
+              background: transparent
+  &14
+    background: $color-white
+    color: $primary-color
+    &__content
+      transform: translateY(-50%) translateX(113px)
+      position: absolute
+      left: 50%
+      max-width: 590px
+      p
+        &:last-child
+          margin-bottom: 0
+      &--quote
+        +clearfix
+        p
+          margin-bottom: 0
+        .fa-quote-right
+          font-size: 48px
+        .fa-quote-left
+          float: right
+          font-size: 48px
+    &__img
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 50%
+      object-fit: cover
+  &Article
+    background:
+      position: top center
+      size: cover
+      repeat: no-repeat
+    h1, .h1
+      color: $color-white
+      text-shadow: 3px 3px 7px rgba($color-black,.85)
+    .time
+      color: $primary-color
+      font-size: 20px
+      .fa
+        margin-right: 5px
+        vertical-align: 1px
+  &Text
+    background: $color-white
+    color: $primary-color
+    padding: 85px 0
+    .section__title
+      color: $primary-color
+
+.contact
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 50%
+    object-fit: cover
+  &__content
+    position: relative
+    padding-left: 683px
+  &__text
+    width: 585px
+    font-size: 16px
+    font-family: $font-roboto-light
+    margin-bottom: 30px
+  &__form
+    max-width: 360px
+
+.download
+  background: linear-gradient(to right, rgba(#832cce,.8), rgba(#662ab9,.8), rgba(#4635ce,.8), rgba(#1d1089,.8))
+  color: $color-white
+  &__title
+    font-family: $font-roboto-light
+    font-size: 24px
+    strong
+      font-family: $font-roboto-medium
+      font-size: 34px
+  &__close
+    position: absolute
+    height: 30px
+    width: 30px
+    border: 1px solid $color-white
+    color: $color-white
+    border-radius: 50%
+    text-align: center
+    right: 15px
+    top: 10px
+    cursor: pointer
+    z-index: 20
+    .fa
+      vertical-align: middle
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 30px 0
+  &__app
+    display: flex
+    position: relative
+    z-index: 20
+    padding-right: 150px
+    a
+      display: flex
+      width: 200px
+      height: 65px
+      border-radius: 50px
+      background: $color-white
+      justify-content: center
+      align-items: center
+      color: $color-white
+      text-decoration: none
+      box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+      transition: box-shadow 0.35s
+      &:hover, &:focus
+        box-shadow: 0 0px 36px rgba(#bed5ff,.5)
+      &[disabled]
+        opacity: 0.5
+        cursor: default
+        &:hover, &:focus
+          box-shadow: 0 10px 36px rgba(#bed5ff,.5)
+    div
+      &+div
+        margin-left: 60px
+  &--category
+    position: absolute
+    left: 0
+    bottom: 0
+    right: 375px
+    color: $color-white
+    background: rgba(#021326,.9)
+    z-index: 20
+    .download
+      &__title
+        line-height: 1.2
+        strong
+          display: block
+      &__app
+        padding-right: 0
+      &__wrapper
+        padding: 26px 0
+    .section__container
+      max-width: 780px !important
+
+.pagination
+  text-align: center
+  display: block
+  font-size: 16px
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      margin: 0 3px
+      display: inline-block
+      &>a, &>span
+        display: block
+        height: 45px
+        width: 45px
+        text-align: center
+        line-height: 43px
+        border-radius: 50%
+        background: $color-white
+        border: 1px solid $primary-color
+        color: $primary-color
+        text-decoration: none
+      &>a
+        &:hover, &:focus
+          background: $primary-color
+          color: $color-white
+      &.active
+        &>a, &>span
+          background: $primary-color
+          color: $color-white
+  &__left
+    margin-right: 30px !important
+  &__right
+    margin-left: 30px !important
+
+.h100vh
+  height: 100vh !important

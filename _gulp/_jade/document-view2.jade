@@ -1,0 +1,91 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Типовой документ' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Типовой документ' + ' - Retouch body' //title страницы для генерации верстки  
+  -var page = 'full'
+
+  include ./_include/_head
+
+  body.body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base.base--full
+      include ./_include/_header
+      
+      .content.content--full
+        .section__container.section__container--hauto
+          h1 Политика Конфиденциальности
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          
+          h2 Название название название
+          ul
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            li Incididunt ut labore et dolore magna aliqua. Ut Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor In reprehenderit in voluptate velit esse cillum dolore.
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+          p &nbsp;
+          h2 Название название название
+          ul
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            li Incididunt ut labore et dolore magna aliqua. Ut Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor In reprehenderit in voluptate velit esse cillum dolore.
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+      #section9.section.section9.section9--full
+        .section9__content
+          .container
+            .section9__logo
+              +logo
+              strong Retouch Body
+              span Make your best photo
+            p Сделайте свою каждую фотографию усовершенствованной! 
+              br
+              | Укажите  в опциях ретуши необходимые изменения 
+              br
+              | и Ваше желание будет исполнено!
+            .section9__app
+              div
+                a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                  img(src="./img/section/app-1.png", alt="")
+              div
+                a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                  img(src="./img/section/app-2.png", alt="")
+        img(src="./img/section/section-9.png", alt="").section9__phone
+        
+        footer.footer
+          .section__container
+            
+            .footer__social
+              a(href="#!" target="_blank")
+                i.fa.fa-instagram
+              a(href="#!" target="_blank")
+                i.fa.fa-facebook
+              a(href="#!" target="_blank")
+                i.fa.fa-google-plus
+            
+            .footer__link
+              ul
+                li: a(href="#!") Связаться с нами
+                li: a(href="#!") Политика конфиденциальности
+                li: a(href="#!") Параметры ретуширования
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    

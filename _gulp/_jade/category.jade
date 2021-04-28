@@ -1,0 +1,55 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Категории' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Категории' + ' - Retouch body' //title страницы для генерации верстки
+  -var page = 'category'  
+
+  include ./_include/_head
+
+  body.body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base.base--small
+      include ./_include/_header
+          
+      .section.section10
+        a(href="#!").section10__btn Вернуться назад
+        
+        .section10__wrapper
+          div.div1
+            .section10__block
+              .section__title.section__title--10 Тело
+              p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+              a(href="#!").section10__more Подробнее
+                i.fa.fa-long-arrow-right
+          div.div2
+            .section10__block
+              .section__title.section__title--10 Лицо
+              p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+              a(href="#!").section10__more Подробнее
+                i.fa.fa-long-arrow-right
+          div.div3
+            .section10__block
+              .section__title.section__title--10 Другое
+              p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+              a(href="#!").section10__more Подробнее
+                i.fa.fa-long-arrow-right
+                    
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    //- include ./_include/_footer-js
+    script(src="./js/common.js")
+    

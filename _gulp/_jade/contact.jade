@@ -1,0 +1,60 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Связаться с нами' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Связаться с нами' + ' - Retouch body' //title страницы для генерации верстки  
+  -var page = 'small'
+
+  include ./_include/_head
+
+  body.body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base.base--small
+      include ./_include/_header
+      
+      img(src="./img/section/section-contact.jpg", alt="").contact__img
+      .content.content--h100per
+        .fp-section.fp-table
+          .fp-tableCell
+            
+            .section__container.section__container--hauto
+              
+              .contact__content
+                .section__title.section__title--dark Связаться с нами
+                p.contact__text По вопросам и предложениям Вы можете связаться с нами заполнив анкету. И мы свяжемся с Вами в ближайшее время.
+                
+                .contact__form
+                  form(action="#!")
+                    fieldset
+                      .form-group
+                        input#input1.form-control(type="text" value="Валерия", required='')
+                        label.form-control-placeholder(for="input1") Имя
+                      .form-group
+                        input#input2.form-control(type="text", required='')
+                        label.form-control-placeholder(for="input2") Email
+                      .form-group
+                        textarea#message1.form-control(name="message", required='')
+                        label.form-control-placeholder(for="message1") Ваше сообщение
+                      .clear20
+                      button(type="submit").btn.btn--default Отправить
+            
+    
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    //- include ./_include/_footer-js
+    script(src="./js/common.js")
+    

@@ -1,0 +1,141 @@
+/* header */
+.header
+  background-color: rgba(#21155d,.25)
+  height: 90px
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  z-index: 100
+  &--small, &--full
+    background: linear-gradient(to right, #832cce, #662ab9, #4635ce, #1d1089)
+  &--longread
+    background: linear-gradient(to right, rgba(#832cce,0.65), rgba(#662ab9,0.65), rgba(#4635ce,0.65), rgba(#1d1089,0.65))
+  &__logo
+    color: $color-white
+    padding-left: 58px
+    height: 41px
+    position: relative
+    float: left
+    margin: 24px 0
+    a
+      color: $color-white
+      text-decoration: none
+    strong
+      display: block
+      line-height: 0.8
+      font-size: 26px
+      margin-bottom: 8px
+      font-family: $font-roboto-medium
+    span
+      display: block
+      line-height: 0.8
+      font-size: 17px
+    svg
+      position: absolute
+      width: 39px
+      height: 41px
+      left: 0
+      top: 0
+      g
+        fill: $color-white
+  &__mobile
+    display: none
+    position: absolute
+    right: 15px
+    top: 10px
+    width: 30px
+    height: 30px
+    background: none
+    padding: 0
+    border: 1px solid $color-white
+    border-radius: 2px
+    font-size: 18px
+    color: $color-white
+    &--close
+      right: inherit
+      left: 15px
+      border-color: $primary-color
+      font-size: 17px
+      color: $primary-color
+  &__navigation
+    +clearfix
+    float: right
+  &__lang
+    float: right
+    width: 75px
+    height: 30px
+    position: relative
+    background: $color-white
+    border-radius: 25px
+    border: 1px solid $color-white
+    border-bottom: 0
+    font-size: 14px
+    margin-top: 30px
+    margin-left: 130px
+    ul
+      margin: 0
+      padding: 5px 0
+      position: absolute
+      top: 29px
+      opacity: 0
+      visibility: hidden
+      border: 1px solid #9796f0
+      border-top: 0
+      background: $color-white
+      left: -1px
+      right: -1px
+      background: $color-white
+      border-radius: 0 0 15px 15px
+      li
+        list-style: none
+        &.active
+          display: none
+        &>a
+          display: block
+          padding-left: 22px
+          height: 24px
+          text-decoration: none
+          color: #666666
+          line-height: 23px
+          &:hover
+            color: #9796f0
+    &-current
+      height: 30px
+      line-height: 28px
+      background: $color-white
+      border: 1px solid $color-white
+      position: absolute
+      top: -1px
+      left: -1px
+      right: -1px
+      border-radius: 25px
+      overflow: hidden
+      padding-left: 22px
+      cursor: pointer
+      color: #444
+      .fa
+        display: inline-block
+        margin-left: 5px
+    &.is-active
+      border-color: #9796f0
+      border-radius: 25px 25px 0 0
+      ul
+        opacity: 1
+        visibility: visible
+      .header
+        &__lang
+          &-current
+            color: #9796f0
+            border-color: #9796f0
+  &__container
+    max-width: 1590px
+    padding: 0 15px
+    margin: 0 auto
+
+  &--full
+    flex-shrink: 0
+    position: inherit
+  &--categoryActive
+    opacity: 0
+    visibility: hidden

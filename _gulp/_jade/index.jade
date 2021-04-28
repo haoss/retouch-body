@@ -1,0 +1,295 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная' + ' - Retouch body' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body.body
+    
+      
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base
+      ul#menu.menu
+        li(data-menuanchor='page1')
+          a(href='#page1') slide 1
+        li(data-menuanchor='page2')
+          a(href='#page2') slide 2
+        li(data-menuanchor='page3')
+          a(href='#page3') slide 3
+        li.active(data-menuanchor='page4')
+          a(href='#page4') slide 4
+        li(data-menuanchor='page5')
+          a(href='#page5') slide 5
+        li(data-menuanchor='page6')
+          a(href='#page6') slide 6
+        li(data-menuanchor='page7')
+          a(href='#page7') slide 7
+        li(data-menuanchor='page8')
+          a(href='#page8') slide 8
+        li(data-menuanchor='page9')
+          a(href='#page9') slide 9
+      
+      #fullPage
+        #section1.section.section1
+          include ./_include/_header
+          
+          a(href='#page2').section1__link
+          .section__container
+            .section1__content
+              .section__title.section__title--1(data-shadow="Мобильное приложение") Мобильное приложение
+              p Сделайте свою каждую фотографию усовершенствованной! Укажите 
+                br
+                | в опциях ретуши необходимые изменения и 
+                br
+                | Ваше желание будет исполнено!
+              .section1__app
+                div
+                  a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                    img(src="./img/stub/app-1.png", alt="")
+                div
+                  a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                    img(src="./img/stub/app-2.png", alt="")
+            img.section1__img(src="./img/section/section-1.png", alt="")
+          img.section1__img.section1__img--320(src="./img/section/section-1-320.png", alt="")
+          
+        #section2.section.section2
+          a(href="#!").section2__btn Смотреть все
+          .section2__wrapper
+            div.div1
+              .section2__block
+                .section__title.section__title--2 Стройная талия
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section2__more Подробнее
+                  i.fa.fa-long-arrow-right
+            div.div2
+              .section2__block
+                .section__title.section__title--2 Плоский живот
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section2__more Подробнее
+                  i.fa.fa-long-arrow-right
+            div.div3
+              .section2__block
+                .section__title.section__title--2 Стройные бедра
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section2__more Подробнее
+                  i.fa.fa-long-arrow-right
+          
+        #section3.section.section3
+          a(href="#!").section3__btn Смотреть все
+          .section3__wrapper
+            div.div1
+              .section3__block
+                .section__title.section__title--3 Уменьшить нос
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section3__more Подробнее
+                  i.fa.fa-long-arrow-right
+            div.div2
+              .section3__block
+                .section__title.section__title--3 Увеличить губы
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section3__more Подробнее
+                  i.fa.fa-long-arrow-right
+            div.div3
+              .section3__block
+                .section__title.section__title--3 Убрать прыщи
+                p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+                a(href="#!").section3__more Подробнее
+                  i.fa.fa-long-arrow-right
+                    
+        #section4.section.section4
+          .section4__slider
+            .section4__slider-wrapper
+              div
+                .section4__slider-block
+                  .section4__slider-top
+                    .section4__slider-btn После коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+                  .section4__slider-bottom
+                    .section4__slider-btn.section4__slider-btn--top До коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+              div
+                .section4__slider-block
+                  .section4__slider-top
+                    .section4__slider-btn После коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+                  .section4__slider-bottom
+                    .section4__slider-btn.section4__slider-btn--top До коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+              div
+                .section4__slider-block
+                  .section4__slider-top
+                    .section4__slider-btn После коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+                  .section4__slider-bottom
+                    .section4__slider-btn.section4__slider-btn--top До коррекции
+                    img(src="./img/section/section-4.jpg", alt="")
+                      
+          .section__container
+            .section4__content
+              .section__title.section__title--4 Редактор другое
+              p Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции  Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции Всего за несколько минут,  с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции  Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции  Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет  достоин обложки журнала! Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции Всего за несколько минут,  с мобильным приложением, любой Ваш снимок станет достоин обложки журнала! Краткое описание функции Всего за несколько минут, с мобильным приложением, любой Ваш снимок станет достоин обложки журнала!
+          
+        #section5.section.section5
+          .section__container
+            .section5__content
+              .section__title.section__title--5 Скрины
+              p Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+          .section5__img
+            img(src="./img/section/section-5.png", alt="")
+            
+        #section6.section.section6
+          .section6__wrapper
+            div
+              .section6__block
+                img(src="./img/section/section-6-1.png", alt="").section6__block-img
+                .section6__block-title 
+                  +clock
+                  | Это быстро
+                .section6__block-text
+                  div Краткое описание.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            div
+              .section6__block
+                img(src="./img/section/section-6-2.png", alt="").section6__block-img
+                .section6__block-title 
+                  +clock
+                  | Название пункта
+                .section6__block-text
+                  div Краткое описание.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            div
+              .section6__block
+                img(src="./img/section/section-6-3.png", alt="").section6__block-img
+                .section6__block-title 
+                  +clock
+                  | Название пункта
+                .section6__block-text
+                  div Краткое описание.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            div
+              .section6__block
+                img(src="./img/section/section-6-4.png", alt="").section6__block-img
+                .section6__block-title 
+                  +clock
+                  | Название пункта
+                .section6__block-text
+                  div Краткое описание.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+          .section__container
+            .section6__content
+              .section__title.section__title--6 Почему выбирают нас
+              p Краткое описание Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru Просмотрите, что включено в приложение Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            
+        #section7.section.section7
+          .section__container
+            .section7__wrapper
+              .section__title.section__title--7 Отзывы
+              .section7__slider
+                .section7__slider-wrapper
+                  div
+                    .section7__slider-block
+                      .section7__slider-title Валерия 1
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                      .section7__slider-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+                  div
+                    .section7__slider-block
+                      .section7__slider-title Валерия 2
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      .section7__slider-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+                  div
+                    .section7__slider-block
+                      .section7__slider-title Валерия 3 
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                      .section7__slider-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+                  div
+                    .section7__slider-block
+                      .section7__slider-title Валерия 4
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                      .section7__slider-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+            
+        #section8.section.section8
+          .section__container
+            .section8__wrapper
+              .section__title.section__title--8 Статьи
+              .section8__row
+                div
+                  .section8__block
+                    .section8__block-img
+                      a(href="#!")
+                        img(src="./img/section/section-8-1.jpg", alt="").img-responsive
+                    .section8__block-content
+                      a(href="#!").section8__block-title Название статьи название статьи
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                      .section8__block-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+                div
+                  .section8__block
+                    .section8__block-img
+                      a(href="#!")
+                        img(src="./img/section/section-8-2.jpg", alt="").img-responsive
+                    .section8__block-content
+                      a(href="#!").section8__block-title Название статьи
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                      .section8__block-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+                div.hidden-xs.visible-xxs
+                  .section8__block
+                    .section8__block-img
+                      a(href="#!")
+                        img(src="./img/section/section-8-3.jpg", alt="").img-responsive
+                    .section8__block-content
+                      a(href="#!").section8__block-title Название статьи
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                      .section8__block-time
+                        i.fa.fa-calendar
+                        | 26.07.2018
+              a(href="#!").section8__btn Читать все
+            
+        #section9.section.section9
+          .section9__content
+            .container
+              .section9__logo
+                +logo
+                strong Retouch Body
+                span Make your best photo
+              p Сделайте свою каждую фотографию усовершенствованной! 
+                br
+                | Укажите  в опциях ретуши необходимые изменения 
+                br
+                | и Ваше желание будет исполнено!
+              .section9__app
+                div
+                  a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                    img(src="./img/section/app-1.png", alt="")
+                div
+                  a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                    img(src="./img/section/app-2.png", alt="")
+          img(src="./img/section/section-9.png", alt="").section9__phone
+          
+          include ./_include/_footer
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js 
+    script(src="./js/common.js")
+    script().
+      var myFullpage = new fullpage('#fullPage', {
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+        menu: '#menu',
+        continuousVertical: false,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        responsiveWidth: 479,
+        verticalCentered: true
+      });

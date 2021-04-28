@@ -1,0 +1,180 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Лонгрид' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Лонгрид' + ' - Retouch body' //title страницы для генерации верстки  
+  -var page = 'longread'
+
+  include ./_include/_head
+
+  body.body
+    
+      
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base
+      
+      .content
+        #section1.section.sectionArticle(style="background-image: url('./img/section/section-article.jpg');").fp-section.fp-table.h100vh
+          .fp-tableCell
+            include ./_include/_header
+            
+            .section__container.section__container--hauto
+              h1 Название статьи редактирование лица
+              .time
+                i.fa.fa-calendar
+                | 26.07.2018 
+
+        .section.sectionText
+          .section__container.section__container--hauto
+            .section__title Идеальное фото
+            p Всё мы хотим казаться на фотографиях более привлекательными, чем в жизни (ну или как минимум не хуже). Здесь совершенно нечего стыдиться, ведь даже при прекрасных внешних данных и отличных навыках фотографа, крайне трудно получить результат, который бы нравился Вам на все 100 процентов. Согласитесь, очень редко можно получить идеальное фото.
+            p	Не смотря на то, что сейчас к нашим услугам буквально бесконечный запас кадров, возможность моментального просмотра получившегося фото и тысячи инструкций и советов по фотографии, идеальное изображение, которое будет действительно представлять Вас в исключительно выгодном свете, получить крайне непросто.
+            p Если Вы специально готовились к фотосессии и работаете с профессиональным фотографом, то снимки, полученные в результате, будут действительно высокого качества. Однако, часто таким фото не хватает искренности и определенной искры, которая почти всегда есть на спонтанных, любительских фото.
+            p Наверняка, Вам знакома ситуация, когда Вы сделали кучу по-настоящему атмосферных фото с друзьями или получили несколько забавных кадров просто дурачась на камеру. Обычно именно такие фотографии получаются самыми лучшими и реалистичными, так как мы не готовимся к ним специально. Именно из-за этого и появляется маленькая ложка дегтя – на таких фото часто остаются не скорректированными мелкие несовершенства. 
+            p	Самая типичная проблема на общих фото в компании, особенно если съемка была в тёмном помещении, это эффект красных глаз и блеск на лице. В отличие от профессионально расставленного студийного света, более приближенные к реальности условия съёмки могут преподнести подобные неприятные сюрпризы, которые, тем не менее, легко устранимы в помощью качественно выполненной ретуши. Загрузив понравившееся фото в приложение и отметив все необходимые опции, Вы получите профессионально обработанный, но при этом «живой» снимок.
+            p Отличным вариантом простого и душевного фото может стать, как не странно, сделанное от скуки селфи. Не суть важно, фотографировались ли Вы вместе с подругой или просто дурачились на камеру смартфона – искренние эмоции всегда добавляют кадрам шарма, а возможность наблюдать за изображением в процессе съемки даёт неограниченный простор для креатива и является дополнительным способом раскрепоститься даже для самых больших скромников. А если добавить к получившемуся профессиональную обработку и убрать неудачно появившийся на щеке прыщик, освежить цвет волос, убрать мешки под глазами, откорректировав все мелкие несовершенства, то итоговым фото точно не стыдно будет похвастаться друзьям в соцсетях.
+
+        #section4.section.section4.fp-section.fp-table.h100vh
+          .fp-tableCell
+            .section4__slider
+              .section4__slider-wrapper
+                div
+                  .section4__slider-block
+                    .section4__slider-top
+                      .section4__slider-btn После коррекции
+                      img(src="./img/section/section-4.jpg", alt="")
+                    .section4__slider-bottom
+                      .section4__slider-btn.section4__slider-btn--top До коррекции
+                      img(src="./img/section/section-4.jpg", alt="")
+                        
+            .section__container
+              .section4__content
+                .section__title.section__title--4 Душевное фото
+                p Отличным вариантом простого и душевного фото может стать, как не странно, сделанное от скуки селфи. Не суть важно, фотографировались ли Вы вместе с подругой или просто дурачились на камеру смартфона – искренние эмоции всегда добавляют кадрам шарма, а возможность наблюдать за изображением в процессе съемки даёт неограниченный простор для креатива и является дополнительным способом раскрепоститься даже для самых больших скромников. А если добавить к получившемуся профессиональную обработку и убрать неудачно появившийся на щеке прыщик, освежить цвет волос, убрать мешки под глазами, откорректировав все мелкие несовершенства, то итоговым фото точно не стыдно будет похвастаться друзьям в соцсетях.
+              
+        #section13.section.section13.fp-section.fp-table.h100vh
+          .fp-tableCell
+            .section13__slider
+              .section13__slider-wrapper
+                div
+                  .section13__slider-block
+                    .section13__slider-top
+                      .section13__slider-btn После коррекции
+                      img(src="./img/section/section-13.jpg", alt="")
+                    .section13__slider-bottom
+                      .section13__slider-btn.section13__slider-btn--top До коррекции
+                      img(src="./img/section/section-13.jpg", alt="")
+                      
+            .section__container
+              .section13__content
+                .section__title.section__title--13 Идеальный снимок
+                p Наконец, если перед Вами стоит задача сделать идеальный снимок и показать себя только в лучшем свете, мы точно справимся с задачей на 100%. Просто укажите в опциях ретуши необходимые изменения и Ваше желание будет исполнено! Увеличить глаза и губы, или же скорректировать овал лица, подчеркнув скулы? А может Вы хотите слегка исправить форму носа или сделать свою улыбку достойной Голливуда? Вам больше не придётся заморачиваться с ракурсами, фильтрами и пытаться добиться желаемого эффекта через программы для редактирование фото. Осталось только загрузить Ваш снимок в приложение #ПриложухаНейм, добавить нужные опции и получить профессиональное и по-настоящему идеальное фото!
+        
+        #section14.section.section14.fp-section.fp-table.h100vh
+          .fp-tableCell
+            img(src="./img/section/section-14.jpg", alt="").section14__img
+            .section__container
+              .section14__content.section14__content--quote
+                i.fa.fa-quote-right
+                p Увеличить глаза и губы, или же скорректировать овал лица, подчеркнув скулы? А может Вы хотите слегка исправить форму носа или сделать свою улыбку достойной Голливуда? Вам больше не придётся заморачиваться с ракурсами, фильтрами и пытаться добиться желаемого эффекта через программы для редактирование фото. Осталось только загрузить Ваш снимок в приложение #ПриложухаНейм, добавить нужные опции и получить профессиональное и по-настоящему идеальное фото!
+                i.fa.fa-quote-left
+
+        #section8.section.section8.fp-section.fp-table.h100vh
+          .fp-tableCell
+            .section__container
+              .section8__wrapper
+                .section__title.section__title--8 Похожие статьи
+                .section8__row.section8__row--carousel
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-1.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-2.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-3.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-1.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-2.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+                    div
+                      .section8__block.section8__block--carousel
+                        .section8__block-img
+                          a(href="#!")
+                            img(src="./img/section/section-8-3.jpg", alt="").img-responsive
+                        .section8__block-content
+                          a(href="#!").section8__block-title Название статьи
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                          .section8__block-time
+                            i.fa.fa-calendar
+                            | 26.07.2018
+
+        #section15.section.fp-auto-height
+          .download
+            .section__container.section__container--hauto
+              .download__wrapper
+                div
+                  .download__title Усовершенствуйся с 
+                    strong Retouch Body
+                div
+                  .download__app
+                    div
+                      a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                        img(src="./img/section/app-1-black.png", alt="")
+                    div
+                      a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                        img(src="./img/section/app-2-black.png", alt="")
+
+          include ./_include/_footer
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js 
+    script(src="./js/common.js")

@@ -1,0 +1,56 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Заглушка' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Заглушка' + ' - Retouch body' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    .stub
+      .stub__content
+        .container
+          .stub__logo
+            +logo
+            strong Retouch Body
+            span Make your best photo
+          p Сделайте свою каждую фотографию усовершенствованной! 
+            br
+            | Укажите  в опциях ретуши необходимые изменения 
+            br
+            | и Ваше желание будет исполнено!
+          .stub__app
+            div
+              a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                img(src="./img/stub/app-1.png", alt="")
+            div
+              a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                img(src="./img/stub/app-2.png", alt="")
+          
+      .stub__footer
+        .container
+          
+          ul
+            li: a(href="#!" target="_blank") О приложении
+            li: a(href="#!" target="_blank") Связаться с нами 
+            li: a(href="#!" target="_blank") Публичная оферта
+            li: a(href="#!" target="_blank") Политика конфиденциальности 
+          
+      img(src="./img/stub/img-phone.png", alt="").stub__phone
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    //- include ./_include/_footer-js
+    script(src="./js/common.js")
+    

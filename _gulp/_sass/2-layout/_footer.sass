@@ -1,0 +1,52 @@
+/* footer */
+.footer
+  background-color: rgba(#21155d,.25)
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 10
+  display: flex
+  align-items: center
+  height: 80px
+  &--small, &--full
+    background: linear-gradient(to right, #832cce, #662ab9, #4635ce, #1d1089)
+  .section__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: auto
+  &__social
+    align-items: center
+    a
+      display: inline-block
+      border-radius: 50%
+      background: $color-white
+      height: 40px
+      width: 40px
+      text-decoration: none
+      color: #0f3271
+      text-align: center
+      line-height: 40px
+      &+a
+        margin-left: 30px
+  &__link
+    font-size: 16px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        margin: 0
+        display: inline-block
+        &+li
+          margin-left: 45px
+        a
+          color: $color-white
+
+  &--full
+    flex-shrink: 0
+    position: inherit
+
+  &--longread
+    position: inherit

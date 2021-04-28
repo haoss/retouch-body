@@ -1,0 +1,181 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Категория' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Категория' + ' - Retouch body' //title страницы для генерации верстки
+  -var page = 'categoryActive'
+  
+  include ./_include/_head
+
+  body.body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base
+      include ./_include/_header
+          
+      #section11.section.section11
+        a(href="#!").section11__btn Вернуться назад
+        a(href="#!").section11__btn.section11__btn--app Загрузить приложение
+          i.fa.fa-download
+        a(href="#section12").section11__btn.section11__btn--info.anchor
+          i.fa.fa-info
+          i.fa.fa-info-circle
+          span Инфо
+            
+        .section11__wrapper
+          div.div1.active
+            .section11__block
+              .section__title.section__title--11
+                i.fa.fa-user
+                | Тело
+              a(href="#!").section11__more Подробнее
+                i.fa.fa-long-arrow-right
+          div.div2
+            .section11__block
+              .section__title.section__title--11
+                i.fa.fa-user
+                | Лицо
+              a(href="#!").section11__more Подробнее
+                i.fa.fa-long-arrow-right
+          div.div3
+            .section11__block
+              .section__title.section__title--11
+                i.fa.fa-user
+                | Другое
+              a(href="#!").section11__more Подробнее
+                i.fa.fa-long-arrow-right
+        
+        .section11__img
+          img(src="./img/section/section-11-2.jpg", alt="")
+          .section11__img-resize
+            img(src="./img/section/section-11-1.jpg", alt="")
+          .section11__img-handle
+            div
+              div
+                i.fa.fa-sort
+        
+        .section11__head
+          .section11__head-wrapper
+            div
+              .section11__head-title Категория
+                strong Тело
+            div
+              .section11__head-body
+                div
+                  a(href="#!") Стройные бёдра
+                div
+                  a(href="#!") Стройнее талия
+                div
+                  a(href="#!") Убрать складки
+                div
+                  a(href="#!") Плоский живот
+                div
+                  a(href="#!") Убрать целлюлит
+                div
+                  a(href="#!") Форма ягодиц
+                div
+                  a(href="#!") Придать загар
+                div
+                  a(href="#!") Больше грудь
+                div
+                  a(href="#!") Стройные бёдра
+                div
+                  a(href="#!") Стройнее талия
+                div
+                  a(href="#!") Убрать складки
+                div
+                  a(href="#!") Плоский живот
+                div
+                  a(href="#!") Убрать целлюлит
+                div
+                  a(href="#!") Форма ягодиц
+                div
+                  a(href="#!") Придать загар
+                div
+                  a(href="#!") Больше грудь
+        
+        .download.download--category(style="display: none")
+          .download__close
+            i.fa.fa-times
+          .section__container.section__container--hauto
+            .download__wrapper
+              div
+                .download__title Усовершенствуйся с 
+                  strong Retouch Body
+              div
+                .download__app
+                  div
+                    a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                      img(src="./img/section/app-1-black.png", alt="")
+                  div
+                    a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                      img(src="./img/section/app-2-black.png", alt="")
+        
+      #section12.section.section12
+        .download.download--category
+          .download__close
+            i.fa.fa-times
+          .section__container.section__container--hauto
+            .download__wrapper
+              div
+                .download__title Усовершенствуйся с 
+                  strong Retouch Body
+              div
+                .download__app
+                  div
+                    a(href="https://itunes.apple.com/us/app/nobbylook-selfie-retouch-edit/id1307082058" target="_blank")
+                      img(src="./img/section/app-1-black.png", alt="")
+                  div
+                    a(href="https://play.google.com/store/apps/details?id=com.nobbylook.app" target="_blank")
+                      img(src="./img/section/app-2-black.png", alt="")
+        .section__container.section__container--hauto
+          h1 Описание категории
+          #lipsum
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor leo, bibendum maximus ex sed, egestas eleifend turpis. Fusce egestas arcu ut mi maximus, nec interdum urna tempor. Pellentesque luctus eros massa, ut bibendum tortor pellentesque sit amet. Nulla turpis erat, condimentum vitae bibendum vel, faucibus nec neque. Ut at magna et ante vehicula ultricies. Sed convallis nisl et nulla vestibulum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec nibh nec lacus iaculis vestibulum eu sed nulla. Sed a lorem et nisi convallis tempor. Mauris quis lacinia mauris, ac porta tellus. Fusce fermentum quam vel nibh scelerisque, vitae fermentum eros venenatis. Phasellus non maximus justo. Nulla euismod libero sed nunc suscipit, quis hendrerit sapien commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur quis urna ut tellus condimentum consectetur eget sit amet justo.
+            p
+              | Vestibulum laoreet pulvinar mauris, vel condimentum quam lacinia quis. Curabitur vitae aliquam lacus. Proin consequat tortor eget ligula tincidunt, sed laoreet mi cursus. Phasellus sem nisi, porttitor sed hendrerit eget, congue quis augue. Quisque blandit erat a tempor vestibulum. Praesent efficitur, nisl sed ornare mattis, nibh urna imperdiet purus, a dignissim felis sem vehicula leo. Suspendisse sit amet mollis orci. Morbi magna ligula, blandit nec placerat non, varius vitae nibh. Pellentesque congue ante at neque hendrerit consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vulputate nibh vitae mauris scelerisque, ut ornare erat tempus.
+            p
+              | Nullam luctus, ligula vel venenatis elementum, nisi massa ornare est, in vulputate leo lacus non lectus. Fusce at pellentesque nunc, sit amet posuere augue. Sed facilisis blandit condimentum. Aenean non convallis quam. Nullam in sapien eu nulla tincidunt tristique ut et tellus. Curabitur dictum sapien ut nulla mollis convallis. Sed blandit augue a tristique cursus. Quisque convallis quam vel diam dictum efficitur. Aliquam quis neque sed mauris dapibus ultrices eget pulvinar sapien.
+            p
+              | Curabitur sed libero bibendum risus mattis rutrum ut sit amet odio. Donec efficitur, nibh in laoreet euismod, purus justo imperdiet erat, in finibus magna est in augue. Phasellus fermentum eros et pharetra consequat. Quisque bibendum sapien et sodales tempor. Morbi purus nulla, sodales eu dapibus eu, malesuada ut ex. Donec urna velit, venenatis id rutrum sit amet, pretium eget massa. Quisque vel est sollicitudin, posuere tortor quis, fringilla urna.
+            p
+              | Proin elit lorem, euismod quis eros vitae, auctor pellentesque tellus. Morbi malesuada ex et mi rutrum pulvinar id vel ex. Integer sit amet felis vitae lorem mollis feugiat. Aenean commodo facilisis vestibulum. Nam ullamcorper sodales leo ac faucibus. Sed eget ante vitae ipsum ullamcorper rutrum a quis nibh. Pellentesque molestie, odio vitae sollicitudin lacinia, sem lacus finibus eros, nec imperdiet mauris ipsum ut enim. Pellentesque pharetra imperdiet dui et ultricies. Nulla luctus, elit ut semper pulvinar, sem mi eleifend purus, et molestie nisi augue nec elit. Ut tincidunt lorem ligula, ac consequat leo laoreet ut. Fusce congue pretium erat, non ullamcorper tellus porttitor non. Maecenas mattis tortor luctus, placerat est eu, auctor turpis.
+            p
+              | Donec varius varius mi, sed ultricies turpis interdum eget. Nulla facilisi. Ut nec diam at ipsum feugiat gravida. Ut faucibus nulla ornare metus tempor venenatis. Integer fringilla ultrices lacus, et vehicula neque sodales eget. Nulla auctor ac felis in pellentesque. Phasellus eu tempus quam, non iaculis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rutrum fringilla nulla, a suscipit velit sollicitudin vehicula. Nam in libero vulputate, pulvinar ex quis, commodo elit. In id lorem et nibh aliquam elementum.
+            p
+              | Duis sollicitudin rutrum mauris vitae dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent lobortis nunc sed est sodales, nec interdum mi lacinia. Suspendisse nunc tellus, varius ut molestie vitae, venenatis in dui. Integer in est eu risus ornare dapibus. Phasellus eleifend, dolor eu faucibus interdum, diam leo porta velit, ut lacinia risus nisi sed mi. Duis commodo maximus fringilla. Mauris volutpat lorem at nulla venenatis rhoncus. Ut tincidunt mi ac viverra mollis. Curabitur lorem diam, cursus non lacus tempus, elementum elementum neque. Aenean varius tellus in est cursus, at tincidunt eros egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis magna dui.
+            p
+              | Duis eu ornare nisl, vitae venenatis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris et ornare mi. Nam faucibus risus id pulvinar tristique. Mauris dictum lacus id lectus posuere, nec commodo lectus euismod. In rutrum magna sed nulla tempor, at molestie ante maximus. Ut vestibulum magna volutpat neque fringilla sodales.
+            p
+              | Pellentesque tincidunt ornare nisl, ut viverra libero condimentum quis. Cras eget semper lectus. Vivamus tincidunt, ipsum hendrerit laoreet elementum, felis orci placerat arcu, vitae imperdiet turpis nisl bibendum odio. Pellentesque faucibus at neque et rhoncus. Maecenas sed laoreet nulla. Phasellus at interdum nisi, sit amet pellentesque diam. Nulla facilisi. Nulla euismod nunc sit amet nisl sagittis, vitae pulvinar turpis aliquet. Sed ullamcorper sapien non ante varius elementum. Aliquam aliquet nunc id nulla feugiat posuere.
+            p
+              | Suspendisse nisi lectus, lobortis sed lobortis non, pellentesque quis nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus efficitur est in molestie finibus. Nunc dictum, urna sit amet ultricies scelerisque, augue mi varius tortor, sit amet rutrum quam nulla in nibh. Fusce dictum, tortor euismod vestibulum tempus, nulla mi convallis elit, ut maximus lorem metus eu nisl. Sed in est nibh. Vestibulum quis urna vel libero feugiat auctor sit amet sit amet nisl. Ut augue nisl, mattis eget tempor vel, porta sit amet nunc.
+            p
+              | Nullam consequat, elit in vehicula varius, metus velit egestas justo, quis maximus neque lorem vitae magna. Quisque condimentum viverra ante, vitae mollis urna pellentesque eu. Etiam purus urna, cursus fermentum varius eget, mollis in tortor. Nunc et nisi mattis, tempus ante ac, pulvinar velit. Mauris faucibus dapibus lobortis. Aliquam lacus lorem, pellentesque eget tellus at, pretium tincidunt dolor. Phasellus pellentesque a velit sed hendrerit. Phasellus euismod pharetra dolor gravida dignissim. Curabitur rhoncus mollis nulla, sed placerat arcu sagittis ac. Sed interdum semper velit sed iaculis. Curabitur sed malesuada ligula.
+            p
+              | Vivamus egestas consequat elementum. Maecenas et euismod diam. Etiam sodales posuere luctus. Mauris ut felis purus. Integer quam eros, bibendum viverra varius vitae, porttitor a nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vestibulum volutpat tincidunt.
+            p
+              | Integer tempus volutpat tellus ut sodales. Donec eget augue non metus suscipit lacinia. Suspendisse vel nisi quis ex tristique molestie sit amet in massa. Suspendisse potenti. Ut rhoncus malesuada lacus, id dignissim sapien blandit in. Quisque interdum ligula scelerisque magna scelerisque, id pharetra tellus venenatis. Phasellus eget enim felis.
+            p
+              | Nunc vitae leo ex. Ut venenatis, leo vitae sagittis congue, sapien turpis tincidunt ipsum, sit amet faucibus odio metus sed lectus. Ut fringilla tempor neque quis rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sagittis dignissim laoreet. Nulla vitae tortor aliquet, porttitor magna vitae, convallis felis. Etiam et convallis nisl, vel efficitur odio. Nunc vitae iaculis ligula, vitae vulputate turpis. Quisque a fringilla dolor. In quam sapien, malesuada molestie iaculis nec, mollis quis mauris. Etiam vitae ultrices massa, at fermentum nulla. Nulla at hendrerit odio. Suspendisse vel vulputate mi. Integer iaculis congue arcu quis pulvinar. Vivamus a tincidunt felis. Nunc quis mauris tellus.
+            p
+              | Nullam finibus nulla vitae risus dictum porta. In sagittis hendrerit ipsum, id pharetra neque laoreet nec. Praesent eu interdum nisi, id tempus erat. Pellentesque bibendum ultrices diam, quis eleifend velit interdum quis. Mauris vitae elit laoreet, rhoncus eros ac, rhoncus lacus. Sed at libero lacus. Donec a vehicula ante. Aliquam gravida sem tortor, a vehicula tellus tempus at. Duis et placerat dui, vel consectetur quam. Nunc vitae magna sit amet nunc pharetra condimentum eget eget ipsum. Proin semper quam eu lacinia congue.
+
+                    
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")

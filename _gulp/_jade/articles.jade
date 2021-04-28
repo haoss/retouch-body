@@ -1,0 +1,87 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Статьи' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Статьи' + ' - Retouch body' //title страницы для генерации верстки  
+  -var page = 'small'
+
+  include ./_include/_head
+
+  body.body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    +mobileNav
+    
+    .base.base--small
+      include ./_include/_header
+      
+      .content.content--h100per
+        .fp-section.fp-table
+          .fp-tableCell
+            
+            .section__container.section__container--hauto
+              
+              .section8__wrapper
+                .section__title.section__title--8 Статьи
+                .section8__row
+                  div
+                    .section8__block
+                      .section8__block-img
+                        a(href="#!")
+                          img(src="./img/section/section-8-1.jpg", alt="").img-responsive
+                      .section8__block-content
+                        a(href="#!").section8__block-title Название статьи название статьи
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                        .section8__block-time
+                          i.fa.fa-calendar
+                          | 26.07.2018
+                  div
+                    .section8__block
+                      .section8__block-img
+                        a(href="#!")
+                          img(src="./img/section/section-8-2.jpg", alt="").img-responsive
+                      .section8__block-content
+                        a(href="#!").section8__block-title Название статьи
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                        .section8__block-time
+                          i.fa.fa-calendar
+                          | 26.07.2018
+                  div
+                    .section8__block
+                      .section8__block-img
+                        a(href="#!")
+                          img(src="./img/section/section-8-3.jpg", alt="").img-responsive
+                      .section8__block-content
+                        a(href="#!").section8__block-title Название статьи
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru orem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                        .section8__block-time
+                          i.fa.fa-calendar
+                          | 26.07.2018
+                .pagination
+                  ul
+                    li.pagination__left: a(href="#!")
+                      i.fa.fa-long-arrow-left
+                    li.active: a(href="#!") 1
+                    li: a(href="#!") 2
+                    li: a(href="#!") 3
+                    li: a(href="#!") 4
+                    li.pagination__right: a(href="#!")
+                      i.fa.fa-long-arrow-right
+            
+    
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
